@@ -1,0 +1,1668 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2017-10-12T19:49:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/2814720",
+        "addr:city": "München",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "80335",
+        "addr:street": "Bayerstraße",
+        "aed:note": "ask at the reception - there you find the label",
+        "aed:note:de": "An der Reception frage, dort ist ein Aufkleber",
+        "building": "yes",
+        "email": "h5413@sofitel.com",
+        "emergency": "defibrillator",
+        "name": "Sofitel Munich Bayerpost‎",
+        "operator": "AccorHotels Germany GmbH",
+        "stars": "5",
+        "tourism": "hotel",
+        "type": "multipolygon",
+        "website": "http://www.sofitel.com/de/hotel-5413-sofitel-munich-bayerpost/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.556074,
+              48.1397753
+            ],
+            [
+              11.5560818,
+              48.1392862
+            ],
+            [
+              11.5563163,
+              48.1392899
+            ],
+            [
+              11.5563157,
+              48.1393102
+            ],
+            [
+              11.5566509,
+              48.1393133
+            ],
+            [
+              11.5566527,
+              48.139301
+            ],
+            [
+              11.5567051,
+              48.1393016
+            ],
+            [
+              11.556706,
+              48.1392857
+            ],
+            [
+              11.5567914,
+              48.1392888
+            ],
+            [
+              11.5569007,
+              48.1392881
+            ],
+            [
+              11.5568988,
+              48.1393041
+            ],
+            [
+              11.5569613,
+              48.1393053
+            ],
+            [
+              11.5569604,
+              48.1393169
+            ],
+            [
+              11.5572956,
+              48.1393218
+            ],
+            [
+              11.5572974,
+              48.1393034
+            ],
+            [
+              11.5575253,
+              48.1393049
+            ],
+            [
+              11.5575211,
+              48.1395085
+            ],
+            [
+              11.5575142,
+              48.139671
+            ],
+            [
+              11.556074,
+              48.1397753
+            ]
+          ],
+          [
+            [
+              11.556307,
+              48.1394395
+            ],
+            [
+              11.5563047,
+              48.1396142
+            ],
+            [
+              11.5566417,
+              48.1395918
+            ],
+            [
+              11.5566489,
+              48.1394443
+            ],
+            [
+              11.556307,
+              48.1394395
+            ]
+          ],
+          [
+            [
+              11.5569518,
+              48.1394485
+            ],
+            [
+              11.5569469,
+              48.1395716
+            ],
+            [
+              11.5573,
+              48.1395445
+            ],
+            [
+              11.5573003,
+              48.1394544
+            ],
+            [
+              11.5569518,
+              48.1394485
+            ]
+          ]
+        ]
+      },
+      "id": "relation/2814720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/349183901",
+        "amenity": "toilets",
+        "defibrillator:location": "entrance, right, behind currency exchange-machine",
+        "defibrillator:location:de": "im Eingangsbereich, rechts an der Rückseite des Geldwechselers",
+        "emergency": "defibrillator",
+        "fee": "0.80€",
+        "indoor": "yes",
+        "layer": "-1",
+        "level": "-1",
+        "name": "rail & fresh",
+        "opening_hours": "24/7",
+        "operator": "Hering Sanikonzept GmbH",
+        "phone": "+49 2736 27216",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.559215,
+              48.1410749
+            ],
+            [
+              11.5591761,
+              48.1412069
+            ],
+            [
+              11.5590059,
+              48.1412067
+            ],
+            [
+              11.5590056,
+              48.141085
+            ],
+            [
+              11.559215,
+              48.1410749
+            ]
+          ]
+        ]
+      },
+      "id": "way/349183901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/659058156",
+        "aed:note": "reception, right behind a column",
+        "aed:note:de": "Reception, rechts hinter einer Säule",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5596668,
+          48.1440308
+        ]
+      },
+      "id": "node/659058156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1437802748",
+        "@relations": [
+          {
+            "role": "Hoteltiefgarage",
+            "rel": 2814720,
+            "reltags": {
+              "addr:city": "München",
+              "addr:country": "DE",
+              "addr:housenumber": "12",
+              "addr:postcode": "80335",
+              "addr:street": "Bayerstraße",
+              "aed:note": "ask at the reception - there you find the label",
+              "aed:note:de": "An der Reception frage, dort ist ein Aufkleber",
+              "building": "yes",
+              "email": "h5413@sofitel.com",
+              "emergency": "defibrillator",
+              "name": "Sofitel Munich Bayerpost‎",
+              "operator": "AccorHotels Germany GmbH",
+              "stars": "5",
+              "tourism": "hotel",
+              "type": "multipolygon",
+              "website": "http://www.sofitel.com/de/hotel-5413-sofitel-munich-bayerpost/",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5572528,
+          48.1397812
+        ]
+      },
+      "id": "node/1437802748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1654971067",
+        "addr:city": "München",
+        "addr:housenumber": "41",
+        "addr:postcode": "80335",
+        "addr:street": "Bayerstraße",
+        "aed:note": "reception, left corner",
+        "aed:note:de": "Reception, in der linken Ecke",
+        "contact:website": "http://www.lemeridienmunich.com/",
+        "emergency": "defibrillator",
+        "name": "Le Meridien",
+        "stars": "5",
+        "tourism": "hotel",
+        "website": "www.lemeridienmunich.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5580028,
+          48.1390138
+        ]
+      },
+      "id": "node/1654971067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1819303971",
+        "aed:note": "ask at the reception - there you find the label",
+        "aed:note:de": "An der Reception frage, dort ist ein Aufkleber",
+        "amenity": "restaurant",
+        "email": "h5413@sofitel.com",
+        "emergency": "defibrillator",
+        "name": "Delice La Brasserie",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "takeaway": "no",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.delice-la-brasserie.de/",
+        "wheelchair": "yes",
+        "@relations": [
+          {
+            "role": "Hotelrestaurant",
+            "rel": 2814720,
+            "reltags": {
+              "addr:city": "München",
+              "addr:country": "DE",
+              "addr:housenumber": "12",
+              "addr:postcode": "80335",
+              "addr:street": "Bayerstraße",
+              "aed:note": "ask at the reception - there you find the label",
+              "aed:note:de": "An der Reception frage, dort ist ein Aufkleber",
+              "building": "yes",
+              "email": "h5413@sofitel.com",
+              "emergency": "defibrillator",
+              "name": "Sofitel Munich Bayerpost‎",
+              "operator": "AccorHotels Germany GmbH",
+              "stars": "5",
+              "tourism": "hotel",
+              "type": "multipolygon",
+              "website": "http://www.sofitel.com/de/hotel-5413-sofitel-munich-bayerpost/",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5574676,
+          48.1395934
+        ]
+      },
+      "id": "node/1819303971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2136710440",
+        "emergency": "defibrillator",
+        "note": "reception",
+        "note:de": "Rezeption",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6594254,
+          48.1023286
+        ]
+      },
+      "id": "node/2136710440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2570701445",
+        "emergency": "defibrillator",
+        "indoor": "yes",
+        "opening_hours": "\"limited\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5427643,
+          48.1328362
+        ]
+      },
+      "id": "node/2570701445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159837266",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.614234,
+          48.1918883
+        ]
+      },
+      "id": "node/3159837266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159873867",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6170106,
+          48.2122107
+        ]
+      },
+      "id": "node/3159873867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874069",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6130961,
+          48.2036654
+        ]
+      },
+      "id": "node/3159874069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874173",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6164092,
+          48.2115612
+        ]
+      },
+      "id": "node/3159874173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159875562",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6132658,
+          48.2036463
+        ]
+      },
+      "id": "node/3159875562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159875564",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6167918,
+          48.2122555
+        ]
+      },
+      "id": "node/3159875564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3292615486",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6121939,
+          48.1275282
+        ]
+      },
+      "id": "node/3292615486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3406907940",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5693689,
+          48.1460587
+        ]
+      },
+      "id": "node/3406907940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960456",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5727836,
+          48.1863041
+        ]
+      },
+      "id": "node/3479960456"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960457",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5731947,
+          48.1806826
+        ]
+      },
+      "id": "node/3479960457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960458",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5671745,
+          48.1558978
+        ]
+      },
+      "id": "node/3479960458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960459",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5646002,
+          48.1517543
+        ]
+      },
+      "id": "node/3479960459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960460",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5633052,
+          48.14519
+        ]
+      },
+      "id": "node/3479960460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960461",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5612734,
+          48.1405448
+        ]
+      },
+      "id": "node/3479960461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960462",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5609275,
+          48.139746
+        ]
+      },
+      "id": "node/3479960462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479960463",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5738646,
+          48.1296234
+        ]
+      },
+      "id": "node/3479960463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987867",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576556,
+          48.1202161
+        ]
+      },
+      "id": "node/3479987867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987868",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5801933,
+          48.1149644
+        ]
+      },
+      "id": "node/3479987868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987869",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.588065,
+          48.1123793
+        ]
+      },
+      "id": "node/3479987869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987870",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5963677,
+          48.1111394
+        ]
+      },
+      "id": "node/3479987870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987871",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6087494,
+          48.1180584
+        ]
+      },
+      "id": "node/3479987871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987872",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-5",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6182819,
+          48.1203952
+        ]
+      },
+      "id": "node/3479987872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987873",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6342531,
+          48.1267028
+        ]
+      },
+      "id": "node/3479987873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3479987874",
+        "aed:location": "Bahnsteig U-Bahn",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6460285,
+          48.1258778
+        ]
+      },
+      "id": "node/3479987874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896163",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5809135,
+          48.1498439
+        ]
+      },
+      "id": "node/3503896163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896170",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.584227,
+          48.1569524
+        ]
+      },
+      "id": "node/3503896170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896173",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5863086,
+          48.1613192
+        ]
+      },
+      "id": "node/3503896173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896176",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5861186,
+          48.1613352
+        ]
+      },
+      "id": "node/3503896176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896183",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5905548,
+          48.1668544
+        ]
+      },
+      "id": "node/3503896183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896192",
+        "emergency": "defibrillator",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5973336,
+          48.1734308
+        ]
+      },
+      "id": "node/3503896192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896295",
+        "emergency": "defibrillator",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.597204,
+          48.1734845
+        ]
+      },
+      "id": "node/3503896295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896300",
+        "emergency": "defibrillator",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6029487,
+          48.1789182
+        ]
+      },
+      "id": "node/3503896300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3505714138",
+        "emergency": "defibrillator",
+        "level": "0",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6079032,
+          48.1837488
+        ]
+      },
+      "id": "node/3505714138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516049932",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5603474,
+          48.1393122
+        ]
+      },
+      "id": "node/3516049932"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516049934",
+        "emergency": "defibrillator",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5332372,
+          48.1537131
+        ]
+      },
+      "id": "node/3516049934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494523",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5577796,
+          48.129239
+        ]
+      },
+      "id": "node/3564494523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494528",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5781007,
+          48.1435125
+        ]
+      },
+      "id": "node/3564494528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3666379158",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5685464,
+          48.1488411
+        ]
+      },
+      "id": "node/3666379158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3718272586",
+        "emergency": "defibrillator",
+        "note": "beim Bademeister",
+        "operator": "STWM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5513692,
+          48.1735816
+        ]
+      },
+      "id": "node/3718272586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3751408947",
+        "access": "private",
+        "emergency": "defibrillator",
+        "indoor": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5961382,
+          48.1170335
+        ]
+      },
+      "id": "node/3751408947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3764439081",
+        "emergency": "defibrillator",
+        "layer": "-3",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5767201,
+          48.1427376
+        ]
+      },
+      "id": "node/3764439081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766200179",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5884437,
+          48.1394067
+        ]
+      },
+      "id": "node/3766200179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766200182",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5881874,
+          48.1395963
+        ]
+      },
+      "id": "node/3766200182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766236031",
+        "emergency": "defibrillator",
+        "layer": "-5",
+        "level": "-3",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5991245,
+          48.1355423
+        ]
+      },
+      "id": "node/3766236031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766242485",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6036024,
+          48.1284443
+        ]
+      },
+      "id": "node/3766242485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766259813",
+        "emergency": "defibrillator",
+        "layer": "-5",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6192533,
+          48.1204673
+        ]
+      },
+      "id": "node/3766259813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766281359",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6312552,
+          48.1185085
+        ]
+      },
+      "id": "node/3766281359"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766296222",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646658,
+          48.108541
+        ]
+      },
+      "id": "node/3766296222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766303951",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6463077,
+          48.1014773
+        ]
+      },
+      "id": "node/3766303951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766314690",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6424803,
+          48.0942696
+        ]
+      },
+      "id": "node/3766314690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766337055",
+        "emergency": "defibrillator",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5673906,
+          48.1404439
+        ]
+      },
+      "id": "node/3766337055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3796474059",
+        "access": "private",
+        "emergency": "defibrillator",
+        "indoor": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5970368,
+          48.1166527
+        ]
+      },
+      "id": "node/3796474059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3934089688",
+        "access": "permissive",
+        "defibrillator:location": "Eingangsbereich der Volkshochschule",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4613732,
+          48.1457092
+        ]
+      },
+      "id": "node/3934089688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3986013349",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6478912,
+          48.1027204
+        ]
+      },
+      "id": "node/3986013349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3989940851",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5356013,
+          48.0961391
+        ]
+      },
+      "id": "node/3989940851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4147173315",
+        "@relations": [
+          {
+            "role": "Hotelbar",
+            "rel": 2814720,
+            "reltags": {
+              "addr:city": "München",
+              "addr:country": "DE",
+              "addr:housenumber": "12",
+              "addr:postcode": "80335",
+              "addr:street": "Bayerstraße",
+              "aed:note": "ask at the reception - there you find the label",
+              "aed:note:de": "An der Reception frage, dort ist ein Aufkleber",
+              "building": "yes",
+              "email": "h5413@sofitel.com",
+              "emergency": "defibrillator",
+              "name": "Sofitel Munich Bayerpost‎",
+              "operator": "AccorHotels Germany GmbH",
+              "stars": "5",
+              "tourism": "hotel",
+              "type": "multipolygon",
+              "website": "http://www.sofitel.com/de/hotel-5413-sofitel-munich-bayerpost/",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5574668,
+          48.1393554
+        ]
+      },
+      "id": "node/4147173315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4157159303",
+        "emergency": "defibrillator",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5863761,
+          48.1617445
+        ]
+      },
+      "id": "node/4157159303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669914",
+        "emergency": "defibrillator",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5670054,
+          48.133268
+        ]
+      },
+      "id": "node/4167669914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669920",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5664896,
+          48.133354
+        ]
+      },
+      "id": "node/4167669920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669926",
+        "emergency": "defibrillator",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5671149,
+          48.1337537
+        ]
+      },
+      "id": "node/4167669926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4241172198",
+        "aed:location": "An der Oberfläche beim Zugang zu den Rolltreppen",
+        "emergency": "defibrillator",
+        "indoor": "no",
+        "level": "0",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4746288,
+          48.1094364
+        ]
+      },
+      "id": "node/4241172198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4280732136",
+        "aed:location": "Pforte",
+        "emergency": "defibrillator",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5817504,
+          48.1378954
+        ]
+      },
+      "id": "node/4280732136"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475004134",
+        "emergency": "defibrillator",
+        "level": "1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6447357,
+          48.0891693
+        ]
+      },
+      "id": "node/4475004134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184615",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5317822,
+          48.1335422
+        ]
+      },
+      "id": "node/4475184615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184620",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5415966,
+          48.1337455
+        ]
+      },
+      "id": "node/4475184620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184627",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5221182,
+          48.1347153
+        ]
+      },
+      "id": "node/4475184627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184634",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.510068,
+          48.1351533
+        ]
+      },
+      "id": "node/4475184634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184641",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5025762,
+          48.1354456
+        ]
+      },
+      "id": "node/4475184641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184648",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5526859,
+          48.1360113
+        ]
+      },
+      "id": "node/4475184648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184655",
+        "emergency": "defibrillator",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6072576,
+          48.1394818
+        ]
+      },
+      "id": "node/4475184655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4490474656",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5528359,
+          48.1534632
+        ]
+      },
+      "id": "node/4490474656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4514396947",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6128456,
+          48.1284957
+        ]
+      },
+      "id": "node/4514396947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4514396948",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6114121,
+          48.1275051
+        ]
+      },
+      "id": "node/4514396948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4682963794",
+        "emergency": "defibrillator",
+        "indoor": "yes",
+        "level": "0",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.475468,
+          48.1494908
+        ]
+      },
+      "id": "node/4682963794"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4995490822",
+        "emergency": "defibrillator"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5246513,
+          48.1002885
+        ]
+      },
+      "id": "node/4995490822"
+    }
+  ]
+}
