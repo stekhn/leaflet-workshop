@@ -1,0 +1,21 @@
+{
+  "name": "wahlprogramm-analyse-longread",
+  "description": "Workshop material and docs for teaching D3",
+  "author": "Steffen Kühne",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stekhn/leaflet-workshop.git"
+  },
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -s -o --cors"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "leaflet": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0"
+  }
+}
