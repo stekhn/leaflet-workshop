@@ -4,7 +4,7 @@
 
   <meta charset="utf-8">
 
-  <title>Markers from GeoJSON</title>
+  <title>Choropleth map from GeoJSON</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
 
@@ -29,18 +29,15 @@
 
   <script>
 
-    getJson('./defibrillators.geojson', drawMap);
+    getJson('./munich.geojson', function (geojson) {
+      getJson('./munich.json', function (data) {
+        drawMap(geojson, data);
+      });
+    });
 
-    function drawMap(geojson) {
+    function drawMap(geojson, data) {
 
       var map = L.map('map').setView([48.13, 11.57], 11);
-
-      var icon = new L.Icon({
-        iconSize: [24, 24],
-        iconAnchor: [12, 12],
-        popupAnchor:  [0, -18],
-        iconUrl: './defibrillator.png'
-      });
 
       L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -48,16 +45,39 @@
       }).addTo(map);
 
       L.geoJson(geojson, {
-        pointToLayer: function(feature, latlng) {
-          return L.marker(latlng, {
-            icon: icon
-          });
-        },
-        onEachFeature: onEachFeature
-      }).addTo(map);
+        style: function (feature) {
 
-      function onEachFeature(feature, layer) {
-        layer.bindPopup(feature.properties['@id']);
+          return {
+              fillColor: getColor(getData(data, feature.properties)),
+              weight: 2,
+              opacity: 1,
+              color: 'white',
+              fillOpacity: 1
+          };
+        }
+      }).addTo(map);
+    }
+
+    function getData(data, name) {
+      return data.filter(function (d) {
+        return d['Stadtbezirk'] === name.name;
+      })[0]['Ausländeranteil'];
+    }
+
+    function getColor(value) {
+      switch (true) {
+        case value <= 25.82:
+          return '#f2f0f7';
+        case value <= 29.64:
+          return '#cbc9e2';
+        case value <= 33.46:
+          return '#9e9ac8';
+        case value <= 37.28:
+          return '#756bb1';
+        case value <= 41.1:
+          return '#54278f';
+        default:
+          return 'black';
       }
     }
 
@@ -78,3 +98,8 @@
     }
   </script>
 </body>
+
+
+
+
+

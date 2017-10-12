@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "Stadtbezirk": "Altstadt-Lehel",
+    "Fläche": 3.15,
+    "Einwohner": 21.454,
+    "Einwohnerdichte": 6.82,
+    "Ausländeranteil": 27.4
+  },
+  {
+    "id": 2,
+    "Stadtbezirk": "Ludwigsvorstadt-Isarvorstadt",
+    "Fläche": 4.40,
+    "Einwohner": 54.915,
+    "Einwohnerdichte": 12.477,
+    "Ausländeranteil": 32.6
+  },
+  {
+    "id": 3,
+    "Stadtbezirk": "Maxvorstadt",
+    "Fläche": 4.30,
+    "Einwohner": 53.443,
+    "Einwohnerdichte": 12.435,
+    "Ausländeranteil": 27.9
+  },
+  {
+    "id": 4,
+    "Stadtbezirk": "Schwabing-West",
+    "Fläche": 4.36,
+    "Einwohner": 69.407,
+    "Einwohnerdichte": 15.908,
+    "Ausländeranteil": 23.4
+  },
+  {
+    "id": 5,
+    "Stadtbezirk": "Au-Haidhausen",
+    "Fläche": 4.22,
+    "Einwohner": 61.999,
+    "Einwohnerdichte": 14.693,
+    "Ausländeranteil": 24.7
+  },
+  {
+    "id": 6,
+    "Stadtbezirk": "Sendling",
+    "Fläche": 3.94,
+    "Einwohner": 41.23,
+    "Einwohnerdichte": 10.468,
+    "Ausländeranteil": 27.5
+  },
+  {
+    "id": 7,
+    "Stadtbezirk": "Sendling-Westpark",
+    "Fläche": 7.81,
+    "Einwohner": 59.175,
+    "Einwohnerdichte": 7.572,
+    "Ausländeranteil": 28.8
+  },
+  {
+    "id": 8,
+    "Stadtbezirk": "Schwanthalerhöhe",
+    "Fläche": 2.07,
+    "Einwohner": 30.282,
+    "Einwohnerdichte": 14.628,
+    "Ausländeranteil": 34.7
+  },
+  {
+    "id": 9,
+    "Stadtbezirk": "Neuhausen-Nymphenburg",
+    "Fläche": 12.91,
+    "Einwohner": 99.538,
+    "Einwohnerdichte": 7.707,
+    "Ausländeranteil": 25.0
+  },
+  {
+    "id": 10,
+    "Stadtbezirk": "Moosach",
+    "Fläche": 11.09,
+    "Einwohner": 53.859,
+    "Einwohnerdichte": 4.855,
+    "Ausländeranteil": 30.8
+  },
+  {
+    "id": 11,
+    "Stadtbezirk": "Milbertshofen-Am Hart",
+    "Fläche": 13.42,
+    "Einwohner": 76.255,
+    "Einwohnerdichte": 5.684,
+    "Ausländeranteil": 41.1
+  },
+  {
+    "id": 12,
+    "Stadtbezirk": "Schwabing-Freimann",
+    "Fläche": 25.67,
+    "Einwohner": 77.188,
+    "Einwohnerdichte": 3.007,
+    "Ausländeranteil": 30.0
+  },
+  {
+    "id": 13,
+    "Stadtbezirk": "Bogenhausen",
+    "Fläche": 23.71,
+    "Einwohner": 87.164,
+    "Einwohnerdichte": 3.676,
+    "Ausländeranteil": 24.6
+  },
+  {
+    "id": 14,
+    "Stadtbezirk": "Berg am Laim",
+    "Fläche": 6.31,
+    "Einwohner": 45.655,
+    "Einwohnerdichte": 7.23,
+    "Ausländeranteil": 31.6
+  },
+  {
+    "id": 15,
+    "Stadtbezirk": "Trudering-Riem",
+    "Fläche": 22.45,
+    "Einwohner": 71.448,
+    "Einwohnerdichte": 3.182,
+    "Ausländeranteil": 22.7
+  },
+  {
+    "id": 16,
+    "Stadtbezirk": "Ramersdorf-Perlach",
+    "Fläche": 19.90,
+    "Einwohner": 113.898,
+    "Einwohnerdichte": 5.725,
+    "Ausländeranteil": 33.5
+  },
+  {
+    "id": 17,
+    "Stadtbezirk": "Obergiesing-Fasangarten",
+    "Fläche": 5.72,
+    "Einwohner": 54.784,
+    "Einwohnerdichte": 9.577,
+    "Ausländeranteil": 31.5
+  },
+  {
+    "id": 18,
+    "Stadtbezirk": "Untergiesing-Harlaching",
+    "Fläche": 8.06,
+    "Einwohner": 54.05,
+    "Einwohnerdichte": 6.709,
+    "Ausländeranteil": 25.0
+  },
+  {
+    "id": 19,
+    "Stadtbezirk": "Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln",
+    "Fläche": 17.76,
+    "Einwohner": 96.199,
+    "Einwohnerdichte": 5.416,
+    "Ausländeranteil": 27.2
+  },
+  {
+    "id": 20,
+    "Stadtbezirk": "Hadern",
+    "Fläche": 9.22,
+    "Einwohner": 50.567,
+    "Einwohnerdichte": 5.482,
+    "Ausländeranteil": 27.3
+  },
+  {
+    "id": 21,
+    "Stadtbezirk": "Pasing-Obermenzing",
+    "Fläche": 16.50,
+    "Einwohner": 74.432,
+    "Einwohnerdichte": 4.512,
+    "Ausländeranteil": 22.4
+  },
+  {
+    "id": 22,
+    "Stadtbezirk": "Aubing-Lochhausen-Langwied",
+    "Fläche": 34.06,
+    "Einwohner": 45.571,
+    "Einwohnerdichte": 1.338,
+    "Ausländeranteil": 26.4
+  },
+  {
+    "id": 23,
+    "Stadtbezirk": "Allach-Untermenzing",
+    "Fläche": 15.45,
+    "Einwohner": 32.248,
+    "Einwohnerdichte": 2.087,
+    "Ausländeranteil": 22.0
+  },
+  {
+    "id": 24,
+    "Stadtbezirk": "Feldmoching-Hasenbergl",
+    "Fläche": 28.94,
+    "Einwohner": 61.764,
+    "Einwohnerdichte": 2.134,
+    "Ausländeranteil": 32.1
+  },
+  {
+    "id": 25,
+    "Stadtbezirk": "Laim",
+    "Fläche": 5.29,
+    "Einwohner": 56.335,
+    "Einwohnerdichte": 10.658,
+    "Ausländeranteil": 27.5
+  }
+]
