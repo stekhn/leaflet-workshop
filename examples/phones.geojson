@@ -1,0 +1,4315 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2017-10-12T19:51:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304416562",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6281573,
+          48.2194849
+        ]
+      },
+      "id": "node/304416562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304416564",
+        "emergency": "phone",
+        "note": "Notrufsäule"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.62162,
+          48.2063606
+        ]
+      },
+      "id": "node/304416564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304416565",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5975301,
+          48.1676581
+        ]
+      },
+      "id": "node/304416565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304416568",
+        "emergency": "phone",
+        "note": "Notrufsäule"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5952457,
+          48.1641364
+        ]
+      },
+      "id": "node/304416568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304416570",
+        "emergency": "phone",
+        "note": "Notrufsäule"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6067822,
+          48.1564178
+        ]
+      },
+      "id": "node/304416570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/305182635",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.616449,
+          48.1056652
+        ]
+      },
+      "id": "node/305182635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/305182636",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6379201,
+          48.1058114
+        ]
+      },
+      "id": "node/305182636"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310842145",
+        "emergency": "phone",
+        "note": "Notrufsäule"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5951703,
+          48.1639748
+        ]
+      },
+      "id": "node/310842145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310842150",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6017407,
+          48.1591378
+        ]
+      },
+      "id": "node/310842150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310842155",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6299909,
+          48.2218534
+        ]
+      },
+      "id": "node/310842155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316513251",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4443458,
+          48.2038481
+        ]
+      },
+      "id": "node/316513251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316517583",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4692794,
+          48.2096266
+        ]
+      },
+      "id": "node/316517583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316517590",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4836662,
+          48.2089849
+        ]
+      },
+      "id": "node/316517590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316517596",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5011645,
+          48.2137583
+        ]
+      },
+      "id": "node/316517596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316670204",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.468364,
+          48.2098667
+        ]
+      },
+      "id": "node/316670204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316670205",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4441413,
+          48.2043396
+        ]
+      },
+      "id": "node/316670205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316670206",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4441553,
+          48.2044816
+        ]
+      },
+      "id": "node/316670206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/324836519",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6287338,
+          48.2193914
+        ]
+      },
+      "id": "node/324836519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/324836520",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6251845,
+          48.2122219
+        ]
+      },
+      "id": "node/324836520"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/330054300",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7101855,
+          48.1421395
+        ]
+      },
+      "id": "node/330054300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/330054301",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7083758,
+          48.1419571
+        ]
+      },
+      "id": "node/330054301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/330054438",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6865917,
+          48.1393621
+        ]
+      },
+      "id": "node/330054438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/330054720",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6465459,
+          48.1393084
+        ]
+      },
+      "id": "node/330054720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/330054721",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6460118,
+          48.1389898
+        ]
+      },
+      "id": "node/330054721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/414892992",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4896631,
+          48.1524959
+        ]
+      },
+      "id": "node/414892992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/440879462",
+        "description": "See Riemer See/Park Nr.1 Wasserwachtgebäude/See-Kiosk",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7485"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7093246,
+          48.1287389
+        ]
+      },
+      "id": "node/440879462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/508079320",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5928002,
+          48.1754043
+        ]
+      },
+      "id": "node/508079320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/637453083",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6158093,
+          48.1351016
+        ]
+      },
+      "id": "node/637453083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/637454796",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6153536,
+          48.1350384
+        ]
+      },
+      "id": "node/637454796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/637454845",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6162311,
+          48.1333127
+        ]
+      },
+      "id": "node/637454845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/637455162",
+        "emergency": "phone",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6165772,
+          48.1333726
+        ]
+      },
+      "id": "node/637455162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/681875367",
+        "description": "See Langwieder See Nr.1 Lußsee Promenade",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "3992"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4147211,
+          48.2001913
+        ]
+      },
+      "id": "node/681875367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/683819353",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4098436,
+          48.1287845
+        ]
+      },
+      "id": "node/683819353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/683819356",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4820847,
+          48.1238373
+        ]
+      },
+      "id": "node/683819356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/703697454",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4033973,
+          48.1258734
+        ]
+      },
+      "id": "node/703697454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/703697458",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4068052,
+          48.1280705
+        ]
+      },
+      "id": "node/703697458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/823867339",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5099828,
+          48.2117271
+        ]
+      },
+      "id": "node/823867339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/825185848",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5111265,
+          48.2133579
+        ]
+      },
+      "id": "node/825185848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/874841818",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.513522,
+          48.2154596
+        ]
+      },
+      "id": "node/874841818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/874841836",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5161468,
+          48.2126687
+        ]
+      },
+      "id": "node/874841836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/925177390",
+        "amenity": "telephone",
+        "check_date": "2017-05-18",
+        "emergency": "phone",
+        "internet_access": "wlan",
+        "operator": "Deutsche Telekom",
+        "ref": "Kleinhesselohe 1, 890033079489 cc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5987263,
+          48.1601136
+        ]
+      },
+      "id": "node/925177390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1115433176",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5304139,
+          48.1251596
+        ]
+      },
+      "id": "node/1115433176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1153076915",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5283098,
+          48.1231927
+        ]
+      },
+      "id": "node/1153076915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159415463",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4063728,
+          48.1281761
+        ]
+      },
+      "id": "node/1159415463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159453962",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5399075,
+          48.1107971
+        ]
+      },
+      "id": "node/1159453962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159453987",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5423616,
+          48.1114324
+        ]
+      },
+      "id": "node/1159453987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159454201",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5627981,
+          48.1130667
+        ]
+      },
+      "id": "node/1159454201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159497141",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764911,
+          48.1115786
+        ]
+      },
+      "id": "node/1159497141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159556189",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5851353,
+          48.0999378
+        ]
+      },
+      "id": "node/1159556189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1159556235",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5823948,
+          48.1044231
+        ]
+      },
+      "id": "node/1159556235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1191562850",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5222878,
+          48.1224269
+        ]
+      },
+      "id": "node/1191562850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1191562979",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5138031,
+          48.1223718
+        ]
+      },
+      "id": "node/1191562979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1239809935",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5684962,
+          48.1675667
+        ]
+      },
+      "id": "node/1239809935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1255700787",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6402815,
+          48.1133014
+        ]
+      },
+      "id": "node/1255700787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1270524847",
+        "description": "Tunnel Freimann Rad und Fußwegtunnel Harnierplatz-Harkortweg Eingang",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7227"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.615085,
+          48.1935481
+        ]
+      },
+      "id": "node/1270524847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1270524856",
+        "description": "Tunnel Freimann Rad und Fußwegtunnel Harnierplatz-Harkortweg Ausgang",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6158381,
+          48.1934339
+        ]
+      },
+      "id": "node/1270524856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1329726048",
+        "emergency": "phone",
+        "operator": "Straßenmeisterei",
+        "source": "Photo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4509469,
+          48.2046767
+        ]
+      },
+      "id": "node/1329726048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1329882649",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5370508,
+          48.1547648
+        ]
+      },
+      "id": "node/1329882649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1329882673",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5401127,
+          48.1800107
+        ]
+      },
+      "id": "node/1329882673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1340187357",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6626113,
+          48.1624364
+        ]
+      },
+      "id": "node/1340187357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1407184250",
+        "emergency": "phone",
+        "operator": "Jürgen Pegler e.V."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5393059,
+          48.1105246
+        ]
+      },
+      "id": "node/1407184250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1418187024",
+        "emergency": "phone",
+        "operator": "Post"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5458539,
+          48.1086668
+        ]
+      },
+      "id": "node/1418187024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1431468600",
+        "emergency": "phone",
+        "operator": "Post",
+        "ref": "3270"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5409688,
+          48.1129645
+        ]
+      },
+      "id": "node/1431468600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1498833306",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5363313,
+          48.198911
+        ]
+      },
+      "id": "node/1498833306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245268",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.434149,
+          48.1799734
+        ]
+      },
+      "id": "node/1752245268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245270",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4341708,
+          48.1804558
+        ]
+      },
+      "id": "node/1752245270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245273",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4309977,
+          48.1820383
+        ]
+      },
+      "id": "node/1752245273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245275",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4312719,
+          48.1822685
+        ]
+      },
+      "id": "node/1752245275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245279",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4115265,
+          48.1948694
+        ]
+      },
+      "id": "node/1752245279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1752245286",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4101809,
+          48.1962818
+        ]
+      },
+      "id": "node/1752245286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1790020872",
+        "emergency": "phone",
+        "operator": "Deutsche Telekom AG",
+        "ref": "3120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5139601,
+          48.1037642
+        ]
+      },
+      "id": "node/1790020872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084978366",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3940047,
+          48.1445769
+        ]
+      },
+      "id": "node/2084978366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084978367",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.39442,
+          48.144796
+        ]
+      },
+      "id": "node/2084978367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084978373",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.399686,
+          48.1555991
+        ]
+      },
+      "id": "node/2084978373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084978374",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3992882,
+          48.1557696
+        ]
+      },
+      "id": "node/2084978374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986985",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4217887,
+          48.1716546
+        ]
+      },
+      "id": "node/2084986985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986986",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4213379,
+          48.1719057
+        ]
+      },
+      "id": "node/2084986986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986987",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4320909,
+          48.1802502
+        ]
+      },
+      "id": "node/2084986987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986988",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4319689,
+          48.1802935
+        ]
+      },
+      "id": "node/2084986988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986989",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4316475,
+          48.1804394
+        ]
+      },
+      "id": "node/2084986989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084986990",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4315473,
+          48.1804833
+        ]
+      },
+      "id": "node/2084986990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084988776",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4338834,
+          48.1823274
+        ]
+      },
+      "id": "node/2084988776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084988779",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4337828,
+          48.1823709
+        ]
+      },
+      "id": "node/2084988779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084988782",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4334492,
+          48.1825213
+        ]
+      },
+      "id": "node/2084988782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2084988784",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4333374,
+          48.1825647
+        ]
+      },
+      "id": "node/2084988784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2087162268",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6231589,
+          48.1574091
+        ]
+      },
+      "id": "node/2087162268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2094675258",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4340781,
+          48.1803971
+        ]
+      },
+      "id": "node/2094675258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2344200384",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.524196,
+          48.1002528
+        ]
+      },
+      "id": "node/2344200384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2566790925",
+        "emergency": "phone",
+        "layer": "-1",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5943789,
+          48.1107303
+        ]
+      },
+      "id": "node/2566790925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2566790947",
+        "emergency": "phone",
+        "layer": "-1",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5960461,
+          48.1110593
+        ]
+      },
+      "id": "node/2566790947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2570701533",
+        "description": "Park Luitpoldpark bei den Kleingartenanlage",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7850"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5701638,
+          48.1738481
+        ]
+      },
+      "id": "node/2570701533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2700043923",
+        "description": "Notrufsäule SOS",
+        "emergency": "phone",
+        "layer": "-1",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6045007,
+          48.1272775
+        ]
+      },
+      "id": "node/2700043923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2700046125",
+        "description": "Notrufsäule SOS",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6052324,
+          48.1278918
+        ]
+      },
+      "id": "node/2700046125"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245938",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5609677,
+          48.1409661
+        ]
+      },
+      "id": "node/2702245938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245965",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5609872,
+          48.1410532
+        ]
+      },
+      "id": "node/2702245965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245974",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5600918,
+          48.1411515
+        ]
+      },
+      "id": "node/2702245974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245976",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5610103,
+          48.1411471
+        ]
+      },
+      "id": "node/2702245976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245990",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5601455,
+          48.1412431
+        ]
+      },
+      "id": "node/2702245990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245998",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5601768,
+          48.1413343
+        ]
+      },
+      "id": "node/2702245998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702245999",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5593402,
+          48.1413352
+        ]
+      },
+      "id": "node/2702245999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702246006",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5593532,
+          48.1414079
+        ]
+      },
+      "id": "node/2702246006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2702246019",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5593955,
+          48.1415066
+        ]
+      },
+      "id": "node/2702246019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703813394",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5611475,
+          48.1397225
+        ]
+      },
+      "id": "node/2703813394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703813395",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5609264,
+          48.1397388
+        ]
+      },
+      "id": "node/2703813395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703813400",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5610477,
+          48.1405549
+        ]
+      },
+      "id": "node/2703813400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703813401",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-4",
+        "level": "-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.561272,
+          48.1405563
+        ]
+      },
+      "id": "node/2703813401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703838155",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.559507,
+          48.1392741
+        ]
+      },
+      "id": "node/2703838155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2703838164",
+        "emergency": "phone",
+        "indoor": "yes",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5603411,
+          48.139312
+        ]
+      },
+      "id": "node/2703838164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352691",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5755684,
+          48.1370574
+        ]
+      },
+      "id": "node/2758352691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352692",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5755066,
+          48.1370716
+        ]
+      },
+      "id": "node/2758352692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352699",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5756598,
+          48.1371376
+        ]
+      },
+      "id": "node/2758352699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352703",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5751521,
+          48.1371438
+        ]
+      },
+      "id": "node/2758352703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352708",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5751225,
+          48.1371501
+        ]
+      },
+      "id": "node/2758352708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352713",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5753386,
+          48.1372083
+        ]
+      },
+      "id": "node/2758352713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352716",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5752359,
+          48.1372298
+        ]
+      },
+      "id": "node/2758352716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352723",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5751158,
+          48.1372575
+        ]
+      },
+      "id": "node/2758352723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352746",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5734914,
+          48.1374921
+        ]
+      },
+      "id": "node/2758352746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352749",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5735924,
+          48.1374763
+        ]
+      },
+      "id": "node/2758352749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352751",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.573492,
+          48.1376016
+        ]
+      },
+      "id": "node/2758352751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2758352754",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5736015,
+          48.1375717
+        ]
+      },
+      "id": "node/2758352754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2792982331",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4617095,
+          48.149569
+        ]
+      },
+      "id": "node/2792982331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2792982337",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4617944,
+          48.1496956
+        ]
+      },
+      "id": "node/2792982337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2792982347",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4618892,
+          48.149837
+        ]
+      },
+      "id": "node/2792982347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2792982393",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4620718,
+          48.1501092
+        ]
+      },
+      "id": "node/2792982393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2844174963",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4312569,
+          48.182391
+        ]
+      },
+      "id": "node/2844174963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2936536796",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3971772,
+          48.1376332
+        ]
+      },
+      "id": "node/2936536796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2936738031",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4099715,
+          48.1286731
+        ]
+      },
+      "id": "node/2936738031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2936875421",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4821728,
+          48.1234883
+        ]
+      },
+      "id": "node/2936875421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2938063336",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5729944,
+          48.1118281
+        ]
+      },
+      "id": "node/2938063336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2938063338",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5732342,
+          48.1119975
+        ]
+      },
+      "id": "node/2938063338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2938067133",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764194,
+          48.1114376
+        ]
+      },
+      "id": "node/2938067133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2938089550",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5849658,
+          48.0998768
+        ]
+      },
+      "id": "node/2938089550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3106252305",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5220263,
+          48.1511028
+        ]
+      },
+      "id": "node/3106252305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3112845454",
+        "description": "See Riemer See/Park Nr.2 Promenade",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7560"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7066493,
+          48.1276161
+        ]
+      },
+      "id": "node/3112845454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3112845455",
+        "description": "See Riemer See/Park Nr.5 Strand",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7732"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7102689,
+          48.1278768
+        ]
+      },
+      "id": "node/3112845455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3143641130",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.613269,
+          48.203656
+        ]
+      },
+      "id": "node/3143641130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3143641131",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6130997,
+          48.203675
+        ]
+      },
+      "id": "node/3143641131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942037",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3965258,
+          48.1398686
+        ]
+      },
+      "id": "node/3157942037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942369",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4265735,
+          48.1758425
+        ]
+      },
+      "id": "node/3157942369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942370",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4373666,
+          48.1901324
+        ]
+      },
+      "id": "node/3157942370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942371",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4872372,
+          48.2093282
+        ]
+      },
+      "id": "node/3157942371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942372",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5008023,
+          48.2140004
+        ]
+      },
+      "id": "node/3157942372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157942373",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5219478,
+          48.222982
+        ]
+      },
+      "id": "node/3157942373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157948533",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.437802,
+          48.190064
+        ]
+      },
+      "id": "node/3157948533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157950659",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4440629,
+          48.2040289
+        ]
+      },
+      "id": "node/3157950659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157953459",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4509397,
+          48.2042858
+        ]
+      },
+      "id": "node/3157953459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3157953460",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5220506,
+          48.2226558
+        ]
+      },
+      "id": "node/3157953460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159837282",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6166168,
+          48.2115024
+        ]
+      },
+      "id": "node/3159837282"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159837284",
+        "emergency": "phone",
+        "level": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6172689,
+          48.2125793
+        ]
+      },
+      "id": "node/3159837284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159837462",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6144459,
+          48.1922242
+        ]
+      },
+      "id": "node/3159837462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159873868",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6167865,
+          48.2122567
+        ]
+      },
+      "id": "node/3159873868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874174",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6164039,
+          48.2115623
+        ]
+      },
+      "id": "node/3159874174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874263",
+        "emergency": "phone",
+        "level": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6139033,
+          48.1913903
+        ]
+      },
+      "id": "node/3159874263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874462",
+        "emergency": "phone",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6146656,
+          48.1926752
+        ]
+      },
+      "id": "node/3159874462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874465",
+        "emergency": "phone",
+        "layer": "-1",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6130172,
+          48.2030671
+        ]
+      },
+      "id": "node/3159874465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874467",
+        "emergency": "phone",
+        "level": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6162711,
+          48.2111011
+        ]
+      },
+      "id": "node/3159874467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874468",
+        "emergency": "phone",
+        "level": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6162796,
+          48.2111157
+        ]
+      },
+      "id": "node/3159874468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874569",
+        "emergency": "phone",
+        "level": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6169484,
+          48.2126554
+        ]
+      },
+      "id": "node/3159874569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874862",
+        "description": "Notrufsäule mit Feuerlöscher und Defibrilator",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6142367,
+          48.1918917
+        ]
+      },
+      "id": "node/3159874862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3159874877",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6170053,
+          48.2122118
+        ]
+      },
+      "id": "node/3159874877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3250731578",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.583841,
+          48.1337509
+        ]
+      },
+      "id": "node/3250731578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3250731579",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5826364,
+          48.1345688
+        ]
+      },
+      "id": "node/3250731579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3250731580",
+        "emergency": "phone",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5823633,
+          48.1349485
+        ]
+      },
+      "id": "node/3250731580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3264553587",
+        "description": "See Riemer See/Park Nr.4 Liegewiese Haar",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7614",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.705694,
+          48.1248127
+        ]
+      },
+      "id": "node/3264553587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3264553588",
+        "description": "See Riemer See/Park Nr.3 Brücke",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7602",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7018024,
+          48.1264892
+        ]
+      },
+      "id": "node/3264553588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3264553589",
+        "description": "See Riemer See/Park Nr.6 Skateanlage",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7800",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6895477,
+          48.1268871
+        ]
+      },
+      "id": "node/3264553589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160579",
+        "description": "See Langwieder See Nr.5 Langwieder See Wasserwacht",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "3525",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4166934,
+          48.1928306
+        ]
+      },
+      "id": "node/3266160579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160580",
+        "description": "See Langwieder See Nr.4 Langwieder See Volleyballfeld",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "4743",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4198008,
+          48.1929015
+        ]
+      },
+      "id": "node/3266160580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160581",
+        "description": "See Langwieder See Nr.6 Langwieder See-Lußsee",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "5292",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4166887,
+          48.1972325
+        ]
+      },
+      "id": "node/3266160581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160582",
+        "description": "See Langwieder See Nr.7 Langwieder See Liegewiese Hotel",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "1763",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.413667,
+          48.19785
+        ]
+      },
+      "id": "node/3266160582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160583",
+        "description": "See Langwieder See Nr.3 Lußsee Ostufer",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "4218",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4207481,
+          48.2004118
+        ]
+      },
+      "id": "node/3266160583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3266160584",
+        "description": "See Langwieder See Nr.2 Lußsee Volleyballfeld",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "3743",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4177549,
+          48.2005506
+        ]
+      },
+      "id": "node/3266160584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3312740987",
+        "description": "Tunnel München Fussgängertunnel Ostbahnhof Eingang Friedenstr.",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7181",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6072605,
+          48.1276956
+        ]
+      },
+      "id": "node/3312740987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3312740988",
+        "description": "Tunnel München Fussgängertunnel Ostbahnhof Mitte",
+        "emergency": "phone",
+        "layer": "-1",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7349",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6064011,
+          48.128258
+        ]
+      },
+      "id": "node/3312740988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3312740989",
+        "description": "Tunnel München Fussgängertunnel Ostbahnhof Eingang Orleanstr.",
+        "emergency": "phone",
+        "operator": "Björn Steiger Stiftung",
+        "ref": "7468",
+        "source": "Björn Steiger Stiftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6057605,
+          48.1286961
+        ]
+      },
+      "id": "node/3312740989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3338601719",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5263961,
+          48.2027402
+        ]
+      },
+      "id": "node/3338601719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896164",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5809109,
+          48.1498446
+        ]
+      },
+      "id": "node/3503896164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896166",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5812682,
+          48.1506088
+        ]
+      },
+      "id": "node/3503896166"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896168",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5839287,
+          48.1563264
+        ]
+      },
+      "id": "node/3503896168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896171",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5842217,
+          48.1569536
+        ]
+      },
+      "id": "node/3503896171"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896174",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5863058,
+          48.1613193
+        ]
+      },
+      "id": "node/3503896174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896177",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.586115,
+          48.1613353
+        ]
+      },
+      "id": "node/3503896177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896179",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5865608,
+          48.1619086
+        ]
+      },
+      "id": "node/3503896179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896181",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5863108,
+          48.1619418
+        ]
+      },
+      "id": "node/3503896181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896184",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5905495,
+          48.1668556
+        ]
+      },
+      "id": "node/3503896184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896186",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5911429,
+          48.1674126
+        ]
+      },
+      "id": "node/3503896186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896188",
+        "emergency": "phone",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5967108,
+          48.1728354
+        ]
+      },
+      "id": "node/3503896188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896190",
+        "emergency": "phone",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5965812,
+          48.172889
+        ]
+      },
+      "id": "node/3503896190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896293",
+        "emergency": "phone",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5973283,
+          48.173432
+        ]
+      },
+      "id": "node/3503896293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896296",
+        "emergency": "phone",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5971987,
+          48.1734857
+        ]
+      },
+      "id": "node/3503896296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896298",
+        "emergency": "phone",
+        "level": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6023552,
+          48.1783678
+        ]
+      },
+      "id": "node/3503896298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3503896301",
+        "emergency": "phone",
+        "level": "-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6029462,
+          48.1789198
+        ]
+      },
+      "id": "node/3503896301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516049933",
+        "emergency": "phone",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5333663,
+          48.1534519
+        ]
+      },
+      "id": "node/3516049933"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516049936",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5332379,
+          48.1537161
+        ]
+      },
+      "id": "node/3516049936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516049938",
+        "emergency": "phone",
+        "level": "-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5327708,
+          48.1546464
+        ]
+      },
+      "id": "node/3516049938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516095295",
+        "emergency": "phone",
+        "level": "-1.33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5608349,
+          48.1392814
+        ]
+      },
+      "id": "node/3516095295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3516155925",
+        "emergency": "phone",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5611403,
+          48.1401447
+        ]
+      },
+      "id": "node/3516155925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494521",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5570756,
+          48.1288984
+        ]
+      },
+      "id": "node/3564494521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494524",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.557777,
+          48.1292397
+        ]
+      },
+      "id": "node/3564494524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494526",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.577957,
+          48.1431771
+        ]
+      },
+      "id": "node/3564494526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494529",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5780968,
+          48.1435133
+        ]
+      },
+      "id": "node/3564494529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494531",
+        "emergency": "phone",
+        "level": "0",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6076241,
+          48.1834886
+        ]
+      },
+      "id": "node/3564494531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3564494533",
+        "emergency": "phone",
+        "level": "0",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6079006,
+          48.1837499
+        ]
+      },
+      "id": "node/3564494533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3586726817",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6054188,
+          48.1277828
+        ]
+      },
+      "id": "node/3586726817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3621159211",
+        "emergency": "phone",
+        "level": "-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5269065,
+          48.0798997
+        ]
+      },
+      "id": "node/3621159211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753686157",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4997263,
+          48.1013051
+        ]
+      },
+      "id": "node/3753686157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753688736",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4876297,
+          48.0891356
+        ]
+      },
+      "id": "node/3753688736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753688737",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4880736,
+          48.0891356
+        ]
+      },
+      "id": "node/3753688737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3753697427",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6292647,
+          48.2220185
+        ]
+      },
+      "id": "node/3753697427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3764439083",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5767037,
+          48.1427405
+        ]
+      },
+      "id": "node/3764439083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3764439085",
+        "emergency": "phone",
+        "layer": "-3",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576746,
+          48.1428132
+        ]
+      },
+      "id": "node/3764439085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766200181",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5884404,
+          48.1394091
+        ]
+      },
+      "id": "node/3766200181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766200184",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.588184,
+          48.1395986
+        ]
+      },
+      "id": "node/3766200184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766236033",
+        "emergency": "phone",
+        "layer": "-5",
+        "level": "-3",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5991212,
+          48.1355446
+        ]
+      },
+      "id": "node/3766236033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766242484",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "Münchner Verkehrsgesellschaft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6036614,
+          48.1277484
+        ]
+      },
+      "id": "node/3766242484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766242487",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6035991,
+          48.1284467
+        ]
+      },
+      "id": "node/3766242487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766259810",
+        "emergency": "phone",
+        "layer": "-5",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6192439,
+          48.120326
+        ]
+      },
+      "id": "node/3766259810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766259812",
+        "emergency": "phone",
+        "layer": "-5",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.618286,
+          48.1203918
+        ]
+      },
+      "id": "node/3766259812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766259815",
+        "emergency": "phone",
+        "layer": "-5",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6192499,
+          48.1204696
+        ]
+      },
+      "id": "node/3766259815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766259817",
+        "emergency": "phone",
+        "layer": "-5",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6183021,
+          48.1205394
+        ]
+      },
+      "id": "node/3766259817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766281358",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6325426,
+          48.1181493
+        ]
+      },
+      "id": "node/3766281358"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766281361",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6312519,
+          48.1185108
+        ]
+      },
+      "id": "node/3766281361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766296221",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.646643,
+          48.1077133
+        ]
+      },
+      "id": "node/3766296221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766296224",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6466546,
+          48.1085433
+        ]
+      },
+      "id": "node/3766296224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766303950",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6460703,
+          48.1009043
+        ]
+      },
+      "id": "node/3766303950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766303953",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6463044,
+          48.1014797
+        ]
+      },
+      "id": "node/3766303953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766314692",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.642477,
+          48.094272
+        ]
+      },
+      "id": "node/3766314692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766314694",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6428792,
+          48.0950232
+        ]
+      },
+      "id": "node/3766314694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766339958",
+        "emergency": "phone",
+        "layer": "1",
+        "level": "1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6452738,
+          48.0886649
+        ]
+      },
+      "id": "node/3766339958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766339960",
+        "emergency": "phone",
+        "layer": "1",
+        "level": "1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6454295,
+          48.0887491
+        ]
+      },
+      "id": "node/3766339960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3766344657",
+        "emergency": "phone",
+        "layer": "-2",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5673873,
+          48.1404463
+        ]
+      },
+      "id": "node/3766344657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3937616189",
+        "covered": "yes",
+        "emergency": "phone",
+        "indoor": "yes",
+        "level": "0",
+        "operator": "MVV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6458208,
+          48.0883048
+        ]
+      },
+      "id": "node/3937616189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018760997",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5082943,
+          48.1218562
+        ]
+      },
+      "id": "node/4018760997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4145173703",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6473475,
+          48.2100706
+        ]
+      },
+      "id": "node/4145173703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669912",
+        "emergency": "phone",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5678116,
+          48.1332555
+        ]
+      },
+      "id": "node/4167669912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669915",
+        "emergency": "phone",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5670073,
+          48.1332688
+        ]
+      },
+      "id": "node/4167669915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669917",
+        "emergency": "phone",
+        "level": "-1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5663463,
+          48.1332886
+        ]
+      },
+      "id": "node/4167669917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669918",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5664895,
+          48.1333533
+        ]
+      },
+      "id": "node/4167669918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669922",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5674224,
+          48.1336059
+        ]
+      },
+      "id": "node/4167669922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669924",
+        "emergency": "phone",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5663678,
+          48.1337311
+        ]
+      },
+      "id": "node/4167669924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167669927",
+        "emergency": "phone",
+        "level": "-3",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5671169,
+          48.1337545
+        ]
+      },
+      "id": "node/4167669927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4167679806",
+        "emergency": "phone",
+        "level": "-1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5673208,
+          48.1336588
+        ]
+      },
+      "id": "node/4167679806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4228934342",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4865598,
+          48.0766965
+        ]
+      },
+      "id": "node/4228934342"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475004135",
+        "emergency": "phone",
+        "level": "1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6447344,
+          48.0891703
+        ]
+      },
+      "id": "node/4475004135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475004137",
+        "emergency": "phone",
+        "level": "1",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6448874,
+          48.0892473
+        ]
+      },
+      "id": "node/4475004137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184616",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5317833,
+          48.1335433
+        ]
+      },
+      "id": "node/4475184616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184618",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5327529,
+          48.1335501
+        ]
+      },
+      "id": "node/4475184618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184621",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5415977,
+          48.1337465
+        ]
+      },
+      "id": "node/4475184621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184623",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5404923,
+          48.1338267
+        ]
+      },
+      "id": "node/4475184623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184628",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5221193,
+          48.1347164
+        ]
+      },
+      "id": "node/4475184628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184630",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5209733,
+          48.1347429
+        ]
+      },
+      "id": "node/4475184630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184632",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5116305,
+          48.1350946
+        ]
+      },
+      "id": "node/4475184632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184635",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5100691,
+          48.1351544
+        ]
+      },
+      "id": "node/4475184635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184637",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5517831,
+          48.1353133
+        ]
+      },
+      "id": "node/4475184637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184639",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5517682,
+          48.1353223
+        ]
+      },
+      "id": "node/4475184639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184642",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5025773,
+          48.1354466
+        ]
+      },
+      "id": "node/4475184642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184645",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5011962,
+          48.1354904
+        ]
+      },
+      "id": "node/4475184645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184649",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.552687,
+          48.1360124
+        ]
+      },
+      "id": "node/4475184649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184651",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.552672,
+          48.1360213
+        ]
+      },
+      "id": "node/4475184651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184653",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.60665,
+          48.1388895
+        ]
+      },
+      "id": "node/4475184653"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4475184656",
+        "emergency": "phone",
+        "level": "-2",
+        "operator": "MVG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6072587,
+          48.1394829
+        ]
+      },
+      "id": "node/4475184656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4801407208",
+        "emergency": "phone",
+        "name:en": "emergency phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6125087,
+          48.1212279
+        ]
+      },
+      "id": "node/4801407208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4918717588",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6055254,
+          48.1276122
+        ]
+      },
+      "id": "node/4918717588"
+    }
+  ]
+}
