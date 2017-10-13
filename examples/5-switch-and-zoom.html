@@ -91,14 +91,19 @@
         {
           'Defibrillatoren': defiLayer,
           'Notrufsäulen': phoneLayer
+        },
+        {
+          position:'topleft'
         }
       ).addTo(map);
 
       L.control.zoom({
-        position:'bottomleft'
+        position:'topright'
       }).addTo(map);
 
-      L.control.scale().addTo(map);
+      L.control.scale({
+        position:'bottomleft'
+      }).addTo(map);
 
       function onEachFeature(feature, layer) {
         layer.bindPopup(feature.properties['@id']);
