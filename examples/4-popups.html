@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Choropleth map from GeoJSON</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    #map .leaflet-popup-content p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+    getJson('./munich.geojson', function (geojson) {
+      getJson('./munich.json', function (data) {
+        drawMap(geojson, data);
+      });
+    });
+
+    function drawMap(geojson, data) {
+
+      var popup = L.popup({ closeButton: false });
+
+      var map = L.map('map').setView([48.13, 11.57], 11);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+      }).addTo(map);
+
+      var city = L.geoJson(geojson, {
+        style: function (feature) {
+          return {
+            fillColor: getColor(getData(data, feature.properties.name)['Ausländeranteil']),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            fillOpacity: 1
+          };
+        },
+        onEachFeature: onEachFeature
+      }).addTo(map);
+
+      function onEachFeature(feature, layer) {
+        layer.bindPopup(feature.properties['@id']);
+        layer.on('mouseover', highlightFeature);
+        layer.on('mouseout', resetHighlight);
+        layer.on('click', clicked);
+      }
+
+      function clicked(e) {
+        map.fitBounds(e.target.getBounds(), {
+          maxZoom: 14
+        });
+      }
+
+      function highlightFeature(e) {
+        var layer = e.target;
+
+        popup
+          .setLatLng(getLatLong(layer))
+          .setContent(function () {
+            var props = layer.feature.properties;
+            var datum = getData(data, props.name);
+
+            var html = '';
+
+            html += '<h3>' + props.name.split('-').join(', ') + '</h3>';
+            html += '<p>Ausländeranteil: ' + datum['Ausländeranteil'] + ' %</p>';
+            html += '<p>Einwohnerdichte: ' + datum['Einwohnerdichte'] + ' Einwohner/km²</p>';
+            html += '<p>Fläche: ' + datum['Fläche'] + ' km²</p>';
+
+            return html;
+          }());
+
+        popup.openOn(map);
+
+        layer.setStyle({
+          weight: 2,
+          color: 'black',
+          dashArray: ''
+        });
+
+        // onMouseOver(e);
+
+        if (!L.Browser.ie && !L.Browser.opera) {
+          layer.bringToFront();
+        }
+      }
+
+      function resetHighlight(e) {
+        city.resetStyle(e.target);
+        map.closePopup();
+      }
+    }
+
+    function getData(data, name) {
+      return data.filter(function (d) {
+        return d['Stadtbezirk'] === name;
+      })[0];
+    }
+
+    function getColor(value) {
+      switch (true) {
+        case value <= 25.82:
+          return '#f2f0f7';
+        case value <= 29.64:
+          return '#cbc9e2';
+        case value <= 33.46:
+          return '#9e9ac8';
+        case value <= 37.28:
+          return '#756bb1';
+        case value <= 41.1:
+          return '#54278f';
+        default:
+          return 'black';
+      }
+    }
+
+    function getLatLong(feature) {
+      return [
+        feature.getBounds().getNorth(),
+        feature.getBounds().getWest() +
+          (feature.getBounds().getEast() -
+          feature.getBounds().getWest()) / 2
+      ];
+    }
+
+    function getJson(path, callback) {
+      var httpRequest = new XMLHttpRequest();
+
+      httpRequest.overrideMimeType('application/json');
+      httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+          if (httpRequest.status === 200) {
+            if (callback) callback(JSON.parse(httpRequest.responseText));
+          }
+        }
+      };
+
+      httpRequest.open('GET', path);
+      httpRequest.send();
+    }
+  </script>
+</body>
+
+
+
+
+
