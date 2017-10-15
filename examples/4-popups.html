@@ -16,12 +16,22 @@
       height: 100%;
     }
 
+    h2 {
+      margin: .5em;
+    }
+
+    /* Bildschirmfüllende Karte */
     #map {
       width: 100%;
       height: 100%;
     }
 
-    #map .leaflet-popup-content p {
+    /* Hintergrundfarbe der Karte */
+    .leaflet-container {
+      background: antiquewhite;
+    }
+
+    .leaflet-popup-content p {
       margin: 0;
     }
   </style>
@@ -29,99 +39,102 @@
 
 <body>
 
+  <h2>Choroplethen-Karte mit Popups</h2>
+
+  <!-- Container für Karte erstellen -->
   <div id="map"></div>
 
   <script>
 
-    getJson('./munich.geojson', function (geojson) {
-      getJson('./munich.json', function (data) {
+    // Lade zuerst das GeoJSON, ...
+    getJson('geo/districts.geojson', function (geojson) {
+      // ... dann lade die Statistik-Daten für die Stadtbezirke, ...
+      getJson('data/districts.json', function (data) {
+        // ... dann rufe die Funktion drawMap() mit beiden Datensätzen auf
         drawMap(geojson, data);
       });
     });
 
     function drawMap(geojson, data) {
 
-      var popup = L.popup({ closeButton: false });
-
+      // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
       var map = L.map('map').setView([48.13, 11.57], 11);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
-      }).addTo(map);
-
-      var city = L.geoJson(geojson, {
+      // Flächen aus GeoJson erstellen
+      var districts = L.geoJson(geojson, {
         style: function (feature) {
           return {
-            fillColor: getColor(getData(data, feature.properties.name)['Ausländeranteil']),
-            weight: 2,
+            // Farbwert basierend auf dem Wert für Ausländeranteil abrufen
+            fillColor: getColor(
+              getData(data, feature.properties.name)['Ausländeranteil']
+            ),
+            fillOpacity: .8,
+            color: 'black',
             opacity: 1,
-            color: 'white',
-            fillOpacity: 1
+            weight: 1
           };
         },
-        onEachFeature: onEachFeature
+        // Zusätzliche Funktion, welche für jede Fläche ausgeführt werden sollt
+        onEachFeature: bindEvents
       }).addTo(map);
 
-      function onEachFeature(feature, layer) {
+      // Leeres Popup erstellen
+      var popup = L.popup({ closeButton: false });
+
+      // Maus-Events für jeden Stadtteil hinzufügen
+      function bindEvents(feature, layer) {
+        // Popup hinzufügen
         layer.bindPopup(feature.properties['@id']);
+        // Fläche hervorheben und Popup öffnen
         layer.on('mouseover', highlightFeature);
+        // Hervorhebung der Fläche zurücknehmen und Popup schließen
         layer.on('mouseout', resetHighlight);
-        layer.on('click', clicked);
+        // Auf den Stadteil zoomen
+        layer.on('click', zoomToFeature);
       }
 
-      function clicked(e) {
+      // Auf eine Fläche zoomen
+      // Zoomstufe 11 => Zoomstufe 13
+      function zoomToFeature(e) {
         map.fitBounds(e.target.getBounds(), {
-          maxZoom: 14
+          maxZoom: 13
         });
       }
 
       function highlightFeature(e) {
         var layer = e.target;
 
+        // Popup am bestimmter Position öffnen
         popup
           .setLatLng(getLatLong(layer))
-          .setContent(function () {
-            var props = layer.feature.properties;
-            var datum = getData(data, props.name);
+          .setContent(getPopup(layer, data))
+          .openOn(map);
 
-            var html = '';
-
-            html += '<h3>' + props.name.split('-').join(', ') + '</h3>';
-            html += '<p>Ausländeranteil: ' + datum['Ausländeranteil'] + ' %</p>';
-            html += '<p>Einwohnerdichte: ' + datum['Einwohnerdichte'] + ' Einwohner/km²</p>';
-            html += '<p>Fläche: ' + datum['Fläche'] + ' km²</p>';
-
-            return html;
-          }());
-
-        popup.openOn(map);
-
+        // Fläche grafisch hervorheben
         layer.setStyle({
-          weight: 2,
-          color: 'black',
-          dashArray: ''
+          fillOpacity: 1,
+          weight: 3
         });
-
-        // onMouseOver(e);
-
-        if (!L.Browser.ie && !L.Browser.opera) {
-          layer.bringToFront();
-        }
       }
 
       function resetHighlight(e) {
-        city.resetStyle(e.target);
+        // Popup schließen
         map.closePopup();
+        // Hervorhebung der Fläche zurücknehmen
+        districts.resetStyle(e.target);
       }
     }
 
+    // Funktion welche die Daten nach einem Stadtbezirk durchsucht
+    // und ALLE entsprechenden Werte zurückgibt.
     function getData(data, name) {
       return data.filter(function (d) {
         return d['Stadtbezirk'] === name;
       })[0];
     }
 
+    // Farbskala-Funktion, welche jeweils für einen bestimmten
+    // Wert eine Farbe zurückgibt: 31.6 => '#cbc9e2'
     function getColor(value) {
       switch (true) {
         case value <= 25.82:
@@ -139,6 +152,25 @@
       }
     }
 
+    // HTML-Inhalt für Popup generieren
+    function getPopup(layer, data) {
+      // Spart später viel Schreibarbeit :)
+      var props = layer.feature.properties;
+      // Daten für den jeweiligen Stadtbezirk abrufen
+      var datum = getData(data, props.name);
+
+      var html = '';
+
+      html += '<h3>' + props.name.split('-').join(', ') + '</h3>';
+      html += '<p>Ausländeranteil: ' + datum['Ausländeranteil'] + ' %</p>';
+      html += '<p>Einwohnerdichte: ' + datum['Einwohnerdichte'] + ' Einwohner/km²</p>';
+      html += '<p>Fläche: ' + datum['Fläche'] + ' km²</p>';
+
+      return html;
+    }
+
+    // Geografische Position eines Features ermitteln
+    // => [48.2481162, 11.52133505]
     function getLatLong(feature) {
       return [
         feature.getBounds().getNorth(),
@@ -148,6 +180,7 @@
       ];
     }
 
+    // Generische Funktion um externe JSON-Dateien zu laden
     function getJson(path, callback) {
       var httpRequest = new XMLHttpRequest();
 

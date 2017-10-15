@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Plugin choropleth map</title>
+
+  <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="../node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.css"/>
+
+  <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+  <script src="../node_modules/leaflet-choropleth/dist/choropleth.js"></script>
+  <script src="../node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+     /* Bildschirmfüllende Karte */
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Styles für die Legende */
+    #map .legend {
+      padding: 10px;
+      border-radius: 5px;
+      background: white;
+    }
+
+    #map .legend h3 {
+      margin-top: 0;
+    }
+
+    #map .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+    }
+
+    /* Styles für die Geolokalisierung */
+    #map .geolocate {
+      margin-top: -2px;
+    }
+
+    #map .geolocate:after {
+      content: '⦿';
+      font-family: Arial, sans-serif;
+      font-size: 30px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Plugins verwenden</h2>
+
+  <div id="map"></div>
+
+  <script>
+
+    // Lade zuerst das GeoJSON, ...
+    getJson('geo/districts.geojson', function (geojson) {
+      // ... dann lade die Statistik-Daten für die Stadtbezirke, ...
+      getJson('data/districts.json', function (data) {
+        // ... dann rufe die Funktion drawMap() mit beiden Datensätzen auf
+        drawMap(geojson, data);
+      });
+    });
+
+    function drawMap(geojson, data) {
+
+      // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
+      var map = L.map('map').setView([48.13, 11.57], 11);
+
+      // Basiskarte von OpenStreetMap hinzufügen
+      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+      }).addTo(map);
+
+      // Choropleth-Plugin verwenden
+      var choropleth = L.choropleth(geojson, {
+
+        valueProperty: function (feature) {
+          return getData(data, feature.properties.name)['Ausländeranteil'];
+        },
+        scale: ['#f7fbff', '#08519c'],
+        steps: 5,
+        mode: 'q',
+        style: {
+          color: '#fff',
+          weight: 2,
+          fillOpacity: 0.8
+        }
+      }).addTo(map);
+
+      L.control.locate({
+        markerStyle: {
+          fillColor: 'red',
+          color: 'red'
+        },
+        circleStyle: {
+          fillColor: 'red',
+          color: 'red'
+        },
+        keepCurrentZoomLevel: true,
+        icon: 'geolocate',
+        iconLoading: 'geolocate loading'
+      }).addTo(map);
+
+      var legend = L.control({position: 'bottomright'});
+      legend.onAdd = function () {
+        return getLegend(choropleth);
+      };
+      legend.addTo(map);
+    }
+
+    function getLegend(choropleth) {
+      var div = L.DomUtil.create('div', 'info legend');
+      var limits = choropleth.options.limits;
+      var colors = choropleth.options.colors;
+
+      div.innerHTML += '<h3>Ausländeranteil</h3>';
+
+      for (var i = 0; i < limits.length; i++) {
+        div.innerHTML +=
+          '<i style="background:' + colors[i + 1] + '"></i> ' +
+          limits[i] + (limits[i + 1] ? ' % - ' + limits[i + 1] + ' %<br>' : ' % +');
+      }
+
+      return div;
+    }
+
+    function getData(data, name) {
+      return data.filter(function (d) {
+        return d['Stadtbezirk'] === name;
+      })[0];
+    }
+
+    // Generische Funktion um externe JSON-Dateien zu laden
+    function getJson(path, callback) {
+      var httpRequest = new XMLHttpRequest();
+
+      httpRequest.overrideMimeType('application/json');
+      httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+          if (httpRequest.status === 200) {
+            if (callback) callback(JSON.parse(httpRequest.responseText));
+          }
+        }
+      };
+
+      httpRequest.open('GET', path);
+      httpRequest.send();
+    }
+  </script>
+</body>

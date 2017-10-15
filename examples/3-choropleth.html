@@ -16,11 +16,17 @@
       height: 100%;
     }
 
+    h2 {
+      margin: .5em;
+    }
+
+    /* Bildschirmfüllende Karte */
     #map {
       width: 100%;
       height: 100%;
     }
 
+    /* Styles für die Legende */
     #map .legend {
       padding: 10px;
       border-radius: 5px;
@@ -42,48 +48,68 @@
 
 <body>
 
+  <h2>Choroplethen-Karte mit Legende</h2>
+
+  <!-- Container für Karte erstellen -->
   <div id="map"></div>
 
   <script>
 
-    getJson('./munich.geojson', function (geojson) {
-      getJson('./munich.json', function (data) {
+    // Lade zuerst das GeoJSON, ...
+    getJson('geo/districts.geojson', function (geojson) {
+      // ... dann lade die Statistik-Daten für die Stadtbezirke, ...
+      getJson('data/districts.json', function (data) {
+        // ... dann rufe die Funktion drawMap() mit beiden Datensätzen auf
         drawMap(geojson, data);
       });
     });
 
     function drawMap(geojson, data) {
 
+      // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
       var map = L.map('map').setView([48.13, 11.57], 11);
 
+      // Basiskarte von OpenStreetMap hinzufügen
       L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
       }).addTo(map);
 
+      // Flächen aus GeoJson erstellen
       L.geoJson(geojson, {
         style: function (feature) {
           return {
-            fillColor: getColor(getData(data, feature.properties.name)['Ausländeranteil']),
-            weight: 2,
-            opacity: 1,
+            // Farbwert basierend auf dem Wert für Ausländeranteil abrufen
+            fillColor: getColor(
+              getData(data, feature.properties.name)
+            ),
+            // Sonstiges Design
+            fillOpacity: .8,
             color: 'white',
-            fillOpacity: 1
+            opacity: 1,
+            weight: 2
           };
         }
       }).addTo(map);
 
+      // Legende unten rechts hinzufügen
       var legend = L.control({position: 'bottomright'});
+      // Funktion, welche die Inhalte der Legende liefert festlegen
       legend.onAdd = getLegend;
       legend.addTo(map);
     }
 
+    // Funktion welche die Daten nach einem Stadtbezirk durchsucht
+    // und den entsprechenden Ausländeranteil zurückgibt.
+    // 'Berg am Laim' => 31.6
     function getData(data, name) {
       return data.filter(function (d) {
         return d['Stadtbezirk'] === name;
-      })[0];
+      })[0]['Ausländeranteil'];
     }
 
+    // Farbskala-Funktion, welche jeweils für einen bestimmten
+    // Wert eine Farbe zurückgibt: 31.6 => '#cbc9e2'
     function getColor(value) {
       switch (true) {
         case value <= 25.82:
@@ -101,12 +127,20 @@
       }
     }
 
-    function getLegend () {
+    // HTML-Inhalt für die Legende generieren
+    function getLegend() {
+
+      // Leeres HTML-Element erstellen
       var div = L.DomUtil.create('div', 'info legend');
+
+      // Schwellenwerte
       var grades = [22.00, 25.82, 29.64, 33.46, 37.28];
 
+      // Überschrift hinzufügen
       div.innerHTML += '<h3>Ausländeranteil</h3>';
 
+      // Erstelle für jeden Schwellenwert einen Eintrag mit
+      // jeweiligen Farben
       for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
           '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
@@ -116,6 +150,7 @@
       return div;
     }
 
+    // Generische Funktion um externe JSON-Dateien zu laden
     function getJson(path, callback) {
       var httpRequest = new XMLHttpRequest();
 
@@ -133,8 +168,3 @@
     }
   </script>
 </body>
-
-
-
-
-

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Switch layers</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    h2 {
+      margin: .5em;
+    }
+
+    /* Bildschirmfüllende Karte */
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Hintergrundfarbe der Karte */
+    .leaflet-container {
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Kartenebenen umschalten</h2>
+
+  <!-- Container für Karte erstellen -->
+  <div id="map"></div>
+
+  <script>
+
+    // Das Datenladen ist hier ziemlich hässlich. Der Fachbegriff
+    // dafür ist Callback Hell. Besser wären Promises oder das
+    // Leaflet Ajax-Plugin:
+
+    // Lade zuerst die Münchner Stadtteile, ...
+    getJson('geo/districts.geojson', function (districts) {
+      // ... dann lade alle Defi-Standorte, ...
+      getJson('geo/defibrillators.geojson', function (defibrillators) {
+        // ... dann lade  alle Notrufsäulen-Standorte, ...
+        getJson('geo/phones.geojson', function (phones) {
+          // ... dann rufe die Funktion drawMap() mit alle Datensätzen auf
+          drawMap(districts, defibrillators, phones);
+        });
+      });
+    });
+
+    function drawMap(districts, defibrillators, phones) {
+
+      // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
+      var map = L.map('map', {
+        // Kein Zoom-Button erstellen (kommt später)
+        zoomControl: false
+      }).setView([48.13, 11.57], 11);
+
+      // Eigenes Icon mit Defibrillator-Logo erstellen
+      var defiIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor:  [0, -18],
+        iconUrl: 'images/defibrillator.png'
+      });
+
+      // Eigenes Icon mit Notruf-Logo erstellen
+      var phoneIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor:  [0, -18],
+        iconUrl: 'images/phone.png'
+      });
+
+      // Straßenkarte hinzufügen
+      var streetMap = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      // Satelittenkarte hinzufügen
+      var satelliteMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: '&copy; Esri'
+      });
+
+      // Stadtteilkarte aus GeoJson hinzufügen
+      var districtMap = L.geoJson(districts, {
+        style: function () {
+          return {
+            // Farbwert basierend auf dem Wert für Ausländeranteil abrufen
+            fillColor: '#333',
+            fillOpacity: 1,
+            color: 'white',
+            opacity: 1,
+            weight: 2
+          };
+        }
+      });
+
+      // Defibrillatoren hinzufügen
+      var defiLayer = L.geoJson(defibrillators, {
+        pointToLayer: function(feature, latlng) {
+          return L.marker(latlng, {
+            // Eigenes Icon verwenden
+            icon: defiIcon
+          });
+        },
+        // Maus-Events für Popup hinzufügen
+        onEachFeature: bindPopup
+      }).addTo(map);
+
+      // Notrufsäulen hinzufügen
+      var phoneLayer = L.geoJson(phones, {
+        pointToLayer: function(feature, latlng) {
+          return L.marker(latlng, {
+            // Eigenes Icon verwenden
+            icon: phoneIcon
+          });
+        },
+        // Maus-Events für Popup hinzufügen
+        onEachFeature: bindPopup
+      }).addTo(map);
+
+      // Kartenumschalter hinzufügen
+      L.control.layers(
+        // Ebenen zwischen denen man umschalten kann
+        {
+          'Straßenansicht': streetMap,
+          'Satellittenansicht': satelliteMap,
+          'Stadteilansicht': districtMap
+        },
+        // Ebenen die man an- oder abwählen kann
+        {
+          'Defibrillatoren': defiLayer,
+          'Notrufsäulen': phoneLayer
+        },
+        // Position des Umschalters
+        {
+          position:'topleft'
+        }
+      ).addTo(map);
+
+      // Zoom-Button rechts oben hinzufügen
+      L.control.zoom({
+        position:'topright'
+      }).addTo(map);
+
+      // Maßstab links unten hinzufügen
+      L.control.scale({
+        position:'bottomleft'
+      }).addTo(map);
+
+      // Zeige für jeden Marker ein Popup
+      function bindPopup(feature, layer) {
+        // Popup mit der jeweiligen OSM-ID anzeigen
+        layer.bindPopup(feature.properties['@id']);
+      }
+    }
+
+    // Generische Funktion um externe JSON-Dateien zu laden
+    function getJson(path, callback) {
+      var httpRequest = new XMLHttpRequest();
+
+      httpRequest.overrideMimeType('application/json');
+      httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+          if (httpRequest.status === 200) {
+            if (callback) callback(JSON.parse(httpRequest.responseText));
+          }
+        }
+      };
+
+      httpRequest.open('GET', path);
+      httpRequest.send();
+    }
+  </script>
+</body>

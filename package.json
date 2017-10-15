@@ -1,6 +1,6 @@
 {
-  "name": "wahlprogramm-analyse-longread",
-  "description": "Workshop material and docs for teaching D3",
+  "name": "leaflet-workshop",
+  "description": "Workshop material and docs for teaching Leaflet",
   "author": "Steffen Kühne",
   "version": "0.0.1",
   "private": true,
@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "http-server": "^0.10.0",
-    "leaflet": "^1.2.0"
+    "leaflet": "^1.2.0",
+    "leaflet-choropleth": "^1.1.4",
+    "leaflet.locatecontrol": "^0.62.0"
   },
   "devDependencies": {
     "eslint": "^4.8.0"

@@ -10,12 +10,15 @@
 
   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 
+  <script src="defibrillators.geojson"></script>
+
   <style type="text/css">
     html, body {
       margin: 0;
       height: 100%;
     }
 
+    /* Bildschirmfüllende Karte */
     #map {
       width: 100%;
       height: 100%;
@@ -25,42 +28,52 @@
 
 <body>
 
+  <h2>Marker mit eigenem Icon</h2>
+
+  <!-- Container für Karte erstellen -->
   <div id="map"></div>
 
   <script>
 
-    getJson('./defibrillators.geojson', drawMap);
+    // GeoJSON laden und drawMap(geojson) aufrufen
+    getJson('geo/defibrillators.geojson', drawMap);
 
     function drawMap(geojson) {
 
+      // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
       var map = L.map('map').setView([48.13, 11.57], 11);
 
-      var icon = new L.Icon({
+      // Eigenes Icon mit Defibrillator-Logo erstellen
+      var defiIcon = new L.Icon({
         iconSize: [24, 24],
         iconAnchor: [12, 12],
         popupAnchor:  [0, -18],
-        iconUrl: './defibrillator.png'
+        iconUrl: 'images/defibrillator.png'
       });
 
+      // Basiskarte von OpenStreetMap hinzufügen
       L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
       }).addTo(map);
 
+      // Marker hinzufügen
       L.geoJson(geojson, {
         pointToLayer: function(feature, latlng) {
           return L.marker(latlng, {
-            icon: icon
+            // Eigenes Icon verwenden
+            icon: defiIcon
           });
         },
-        onEachFeature: onEachFeature
+        // Maus-Events definieren
+        onEachFeature: function (feature, layer) {
+          // Popup öffnen, welches die OSM-ID anzeigt
+          layer.bindPopup(feature.properties['@id']);
+        }
       }).addTo(map);
-
-      function onEachFeature(feature, layer) {
-        layer.bindPopup(feature.properties['@id']);
-      }
     }
 
+    // Generische Funktion um externe JSON-Dateien zu laden
     function getJson(path, callback) {
       var httpRequest = new XMLHttpRequest();
 

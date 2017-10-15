@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+  <title>Notfallkarte Köln</title>
+
+  <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css"/>
+  <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+  <style type="text/css">
+    #map {
+      height: 100%;
+    }
+
+    .leaflet-control-layers-list {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+    getJson('defibrillators-cologne.geojson', function (defigeojson) {
+      getJson('phones-cologne.geojson', function (phonegeojson) {
+        getJson('cologne.geojson', function (colognegeojson) {
+          drawMap(defigeojson, phonegeojson, colognegeojson);
+        });
+      });
+    });
+
+    function drawMap(defigeojson, phonegeojson, colognegeojson) {
+
+      var map = L.map('map', {
+        zoomControl: false
+      }).setView([50.94, 6.96], 11);
+
+      var defiIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor:  [0, -18],
+        iconUrl: 'defibrillator.png'
+      });
+
+      var phoneIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor:  [0, -18],
+        iconUrl: 'phone.png'
+      });
+
+      var streetMap = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+      });
+
+      var satelitteMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+      });
+
+      var defiLayer = L.geoJson(defigeojson, {
+        pointToLayer: function(feature, latlng) {
+          return L.marker(latlng, { icon: defiIcon });
+        }
+      }).addTo(map);
+
+      var phoneLayer = L.geoJson(phonegeojson, {
+        pointToLayer: function(feature, latlng) {
+          return L.marker(latlng, { icon: phoneIcon });
+        }
+      }).addTo(map);
+
+      var districtLayer = L.geoJson(colognegeojson).addTo(map);
+
+      L.control.layers(
+        {
+          'Straßenkarte': streetMap,
+          'Satelittenkarte': satelitteMap,
+          'Stadtbezirke': districtLayer
+        },
+        {
+          'Defibrillatoren': defiLayer,
+          'Notrufsäulen': phoneLayer
+        },
+        {
+          position: 'topleft'
+        }
+      ).addTo(map);
+
+      L.control.zoom({
+        position: 'topright'
+      }).addTo(map);
+
+      L.control.scale({
+        position:'bottomleft'
+      }).addTo(map);
+    }
+
+    function getJson(path, callback) {
+      var httpRequest = new XMLHttpRequest();
+
+      httpRequest.overrideMimeType('application/json');
+      httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+          if (httpRequest.status === 200) {
+            if (callback) callback(JSON.parse(httpRequest.responseText));
+          }
+        }
+      };
+
+      httpRequest.open('GET', path);
+      httpRequest.send();
+    }
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
