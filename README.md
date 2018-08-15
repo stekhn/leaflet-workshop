@@ -1,5 +1,7 @@
 # Leaflet-Workshop
 
+Einführung in die Karten-Bibliothek Leaflet mit praktischen Beispielen und Übungen.
+
 ## Was ist Leaflet
 
 Leaflet ist eine JavaScript-Bibliothek zum Erstellen von Kartenanwendungen und -visualisierungen. Leaflet baut auf modernen Webtechnologien wie HTML5 und CSS3 auf und unterstützt die meisten Mobil- und Desktop-Plattformen. Die Bibliothek wird unter anderem von großen Webseiten wie Github, Pinterest oder Flickr verwendet.
