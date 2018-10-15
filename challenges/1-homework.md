@@ -34,7 +34,7 @@ var getAge = function (object) {
 getAge(person); // => Philipp ist 31 Jahre alt.
 ```
 
-Objekte können auch verschachtelt werden. Um auf ein bestimmtes Unterobjekt zuzugreifen gibt es zwei Möglichkeiten: [Punkt oder Klammernotion](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Property_Accessors). In diesem Beispiel können wir beide anwenden. Wir wollen wissen, wo Philipp überall arbeitet:
+Objekte können auch verschachtelt werden. Um auf ein bestimmtes Unterobjekt zuzugreifen, gibt es zwei Möglichkeiten: [Punkt oder Klammernotion](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Property_Accessors). In diesem Beispiel können wir beide anwenden. Wir wollen wissen, wo Philipp überall arbeitet:
 
 ```javascript
 var person = {
@@ -43,7 +43,7 @@ var person = {
     home: 'Stuttgart',
     work: {
       'main job': 'Esslingen',
-      freelance: 'Düsseldorf',
+      freelance: 'Düsseldorf'
     }
   }
 };
@@ -53,6 +53,30 @@ var getLocations = function (object) {
 };
 
 getLocations(person); // => Philipp wohnt in Stuttgart, arbeitet hauptberuflich in Esslingen und als Freelancer in Düsseldorf.
+```
+
+**Lösung**
+
+```javascript
+var person = {
+  name: 'Philipp',
+  locations: {
+    home: 'Stuttgart',
+    work: {
+      'main job': 'Esslingen',
+      freelance: 'Düsseldorf'
+    }
+  }
+};
+
+var getLocations = function (object) {
+
+  console.log(
+    object.name + ' wohnt in ' + object.locations.home + ', arbeitet haupberuflich in ' +
+    object.locations.work['main job'] + ' und als Freelancer in ' + object.locations.work.freelance
+  );
+};
+
 ```
 
 ### 3. Object Arrays
@@ -93,9 +117,9 @@ getCity('Philipp'); // => Philipp kommt aus Stuttgart.
 
 Wenn du Probleme hast die Lösung zu finden, google doch einfach mal nach _javascript find object in object array_. Vermutlich findest du die Lösung auf der Seite [Stackoverflow](https://stackoverflow.com/questions/13964155/get-javascript-object-from-array-of-objects-by-value-or-property).
 
-### 6. Bonusübung
+### 5. Bonusübung
 
-Und hier noch ein kleine Programmierübung aus der Kartenwelt. Wir wollen die Landkreise auf einer Karte entsprechend der jewiligen Arbeitslosenquote einfärben. Je höher die Arbeitlosenquote ist, desto dunkelblauer die Färbung. Schaffst du es, für jeden Wert zwischen 0 (minimale Arbeitslosenquote) und 20 (maximale Arbeitslosenquote), die richtige Farbe zu finden?
+Und hier noch ein kleine Programmierübung aus der Kartenwelt. Wir wollen die Landkreise auf einer Karte entsprechend der jeweiligen Arbeitslosenquote einfärben. Je höher die Arbeitlosenquote ist, desto dunkelblauer die Färbung. Schaffst du es, für jeden Wert zwischen 0 (minimale Arbeitslosenquote) und 20 (maximale Arbeitslosenquote), die richtige Farbe zu finden?
 
 ```javascript
 // Farbpalett von Hellblau bis Dunkelblau in Hexadezimaldarstellung
@@ -112,6 +136,6 @@ getColor(14); // => #2b8cbe
 getColor(18); // => #045a8d
 ```
 
-Diese Aufgabe lässt sich mit [if-Bedingungen](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/if...else), [switch-Anweisungen](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/switch) und auf viele andere Weisen lösen.
+Diese Aufgabe lässt sich mit [if-Bedingungen](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/if...else), [switch-Anweisungen](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/switch) und auf hundert anderen Weisen lösen.
 
 ### Vielen Dank für deine Mühe und bis zum Seminar 🍻
