@@ -55,30 +55,6 @@ var getLocations = function (object) {
 getLocations(person); // => Philipp wohnt in Stuttgart, arbeitet hauptberuflich in Esslingen und als Freelancer in Düsseldorf.
 ```
 
-**Lösung**
-
-```javascript
-var person = {
-  name: 'Philipp',
-  locations: {
-    home: 'Stuttgart',
-    work: {
-      'main job': 'Esslingen',
-      freelance: 'Düsseldorf'
-    }
-  }
-};
-
-var getLocations = function (object) {
-
-  console.log(
-    object.name + ' wohnt in ' + object.locations.home + ', arbeitet haupberuflich in ' +
-    object.locations.work['main job'] + ' und als Freelancer in ' + object.locations.work.freelance
-  );
-};
-
-```
-
 ### 3. Object Arrays
 
 Arrays bestehen nicht immer nur aus Buchstaben oder Zahlen, sondern manchmal auch aus mehreren Objekten. Das ist praktisch, um zum Beispiel Personen mit mehreren Eigenschaften zu speichern. Schaffst du es, alle Personen mit ihrem Namen und Herkunftsort zu begrüßen?
