@@ -6,12 +6,12 @@
 
   <title>Plugin choropleth map</title>
 
-  <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css"/>
-  <link rel="stylesheet" href="../node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.63.0/dist/L.Control.Locate.min.css">
 
-  <script src="../node_modules/leaflet/dist/leaflet.js"></script>
-  <script src="../node_modules/leaflet-choropleth/dist/choropleth.js"></script>
-  <script src="../node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.locatecontrol@0.63.0/dist/L.Control.Locate.min.js"></script>
 
   <style type="text/css">
     html, body {
@@ -19,40 +19,10 @@
       height: 100%;
     }
 
-     /* Bildschirmfüllende Karte */
+    /* Bildschirmfüllende Karte */
     #map {
       width: 100%;
       height: 100%;
-    }
-
-    /* Styles für die Legende */
-    #map .legend {
-      padding: 10px;
-      border-radius: 5px;
-      background: white;
-    }
-
-    #map .legend h3 {
-      margin-top: 0;
-    }
-
-    #map .legend i {
-      width: 18px;
-      height: 18px;
-      float: left;
-      margin-right: 8px;
-    }
-
-    /* Styles für die Geolokalisierung */
-    #map .geolocate {
-      margin-top: -2px;
-    }
-
-    #map .geolocate:after {
-      content: '⦿';
-      font-family: Arial, sans-serif;
-      font-size: 30px;
-      line-height: 30px;
     }
   </style>
 </head>
@@ -65,83 +35,87 @@
 
   <script>
 
-    // Lade zuerst das GeoJSON, ...
-    getJson('geo/districts.geojson', function (geojson) {
-      // ... dann lade die Statistik-Daten für die Stadtbezirke, ...
-      getJson('data/districts.json', function (data) {
-        // ... dann rufe die Funktion drawMap() mit beiden Datensätzen auf
-        drawMap(geojson, data);
+    // Lade alle Defibrilatoren ...
+    getJson('geo/defibrillators.geojson', function (defibrillators) {
+      // ... dann lade alle Notrufsäulen-Standorte, ...
+      getJson('geo/phones.geojson', function (phones) {
+        // ... dann rufe die Funktion drawMap() mit alle Datensätzen auf
+        drawMap(defibrillators, phones);
       });
     });
 
-    function drawMap(geojson, data) {
+    function drawMap(defibrillators, phones) {
 
       // Karte mit Mittelpunkt in München und Zoom-Level 11 erstellen
-      var map = L.map('map').setView([48.13, 11.57], 11);
+      var map = L.map('map', {
+        // Kein Zoom-Button erstellen (kommt später)
+        zoomControl: false
+      }).setView([48.13, 11.57], 11);
 
-      // Basiskarte von OpenStreetMap hinzufügen
-      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+      // Eigenes Icon mit Defibrillator-Logo erstellen
+      var defiIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor: [0, -18],
+        iconUrl: 'images/defibrillator.png'
+      });
+
+      // Eigenes Icon mit Notruf-Logo erstellen
+      var phoneIcon = new L.Icon({
+        iconSize: [24, 24],
+        iconAnchor: [12, 12],
+        popupAnchor: [0, -18],
+        iconUrl: 'images/phone.png'
+      });
+
+      // Straßenkarte hinzufügen
+      var streetMap = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(map);
 
-      // Choropleth-Plugin verwenden
-      var choropleth = L.choropleth(geojson, {
-
-        valueProperty: function (feature) {
-          return getData(data, feature.properties.name)['Ausländeranteil'];
+      // Defibrillatoren hinzufügen
+      var defiLayer = L.geoJson(defibrillators, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {
+            // Eigenes Icon verwenden
+            icon: defiIcon
+          });
         },
-        scale: ['#f7fbff', '#08519c'],
-        steps: 5,
-        mode: 'q',
-        style: {
-          color: '#fff',
-          weight: 2,
-          fillOpacity: 0.8
-        }
+        // Maus-Events für Popup hinzufügen
+        onEachFeature: bindPopup
       }).addTo(map);
 
-      L.control.locate({
-        markerStyle: {
-          fillColor: 'red',
-          color: 'red'
+      // Notrufsäulen hinzufügen
+      var phoneLayer = L.geoJson(phones, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {
+            // Eigenes Icon verwenden
+            icon: phoneIcon
+          });
         },
-        circleStyle: {
-          fillColor: 'red',
-          color: 'red'
-        },
-        keepCurrentZoomLevel: true,
-        icon: 'geolocate',
-        iconLoading: 'geolocate loading'
+        // Maus-Events für Popup hinzufügen
+        onEachFeature: bindPopup
       }).addTo(map);
 
-      var legend = L.control({position: 'bottomright'});
-      legend.onAdd = function () {
-        return getLegend(choropleth);
-      };
-      legend.addTo(map);
-    }
+      // Lokalisator-Button hinzufügen
+      L.control.locate().addTo(map);
 
-    function getLegend(choropleth) {
-      var div = L.DomUtil.create('div', 'info legend');
-      var limits = choropleth.options.limits;
-      var colors = choropleth.options.colors;
+      // Zoom-Button rechts oben hinzufügen
+      L.control.zoom({
+        position: 'topright'
+      }).addTo(map);
 
-      div.innerHTML += '<h3>Ausländeranteil</h3>';
+      // Maßstab links unten hinzufügen
+      L.control.scale({
+        position: 'bottomleft'
+      }).addTo(map);
 
-      for (var i = 0; i < limits.length; i++) {
-        div.innerHTML +=
-          '<i style="background:' + colors[i + 1] + '"></i> ' +
-          limits[i] + (limits[i + 1] ? ' % - ' + limits[i + 1] + ' %<br>' : ' % +');
+      // Zeige für jeden Marker ein Popup
+      function bindPopup(feature, layer) {
+        // Popup mit der jeweiligen OSM-ID anzeigen
+        layer.bindPopup(feature.properties['@id']);
       }
-
-      return div;
-    }
-
-    function getData(data, name) {
-      return data.filter(function (d) {
-        return d['Stadtbezirk'] === name;
-      })[0];
     }
 
     // Generische Funktion um externe JSON-Dateien zu laden
@@ -149,7 +123,7 @@
       var httpRequest = new XMLHttpRequest();
 
       httpRequest.overrideMimeType('application/json');
-      httpRequest.onreadystatechange = function() {
+      httpRequest.onreadystatechange = function () {
         if (httpRequest.readyState === 4) {
           if (httpRequest.status === 200) {
             if (callback) callback(JSON.parse(httpRequest.responseText));
