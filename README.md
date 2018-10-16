@@ -418,9 +418,31 @@ Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafl
 
 ## Plugins
 
-```javascript
+Der Funktionsumfang von Leaflet kann durch viele verschiedene Plugin erweitert werden. Dieses Beispiel verwendet das Plugin [Locate](https://github.com/domoritz/leaflet-locatecontrol). Damit kann der Benutzer seinen [Standort lokalisieren](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API), was praktisch für personalisierte Kartenanwendungen ist.
 
+Wie Leaflet auch, müssen die Plugins im `<head>`-Bereich einer Seite eingebunden werden. Wichtig ist, dass Plugins immer **nach** dem Leaflet-Skript oder -Stylesheet eingebunden werden:
+
+```html
+<head>
+
+  <title>Meine Karte</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.63.0/dist/L.Control.Locate.min.css">
+
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.locatecontrol@0.63.0/dist/L.Control.Locate.min.js"></script>
+</head>
 ```
+
+Das Einbinden der Locate-Funktion in den eigenen Code ist einfach:
+
+```javascript
+L.control.locate().addTo(map);
+```
+
+Eine Liste der verfügbaren Plugins findet sich auf der [Leaflet-Seite](https://leafletjs.com/plugins.html)
 
 ## Praktische Tools
 
