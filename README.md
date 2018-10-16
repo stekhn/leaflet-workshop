@@ -179,7 +179,7 @@ Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafl
 
 ## Thematische Karten erstellen
 
-Bei thematischen Karten oder sogenannten Choroplethen-Karten geht es darum Flächen, wie Bundesländer entsprechend eines bestimmten Merkmals einzufärben. Im folgenden Beispiel erstellen wir die Flächen aus einer GeoJSON-Datei. Die Farbe der jeweiligen Fläche wird aus dem Wert `feature.properties.value` mithilfe der Funktion `getColor()` definiert:
+Bei thematischen Karten oder sogenannten Choroplethen-Karten geht es darum Flächen, zum Beispiel Bundesländer, entsprechend eines bestimmten Merkmals einzufärben. Im folgenden Beispiel erstellen wir die Flächen aus einer GeoJSON-Datei. Die Farbe der jeweiligen Fläche wird aus dem Wert `feature.properties.value` mithilfe der Funktion `getColor()` definiert:
 
 ```javascript
 L.geoJson(geojson, {
@@ -252,11 +252,77 @@ Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafl
 
 ## Popups
 
-```javascript
+Um zusätzliche Daten anzuzeigen, kann man für die einzelnen Elemente der Karte ein *Popup* anzeigen. Dazu müssen wir festlegen, welche Art der Interaktion das Popup öffnet ([Klick, Doppelklick, Hover](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)). In diesem Beispiel öffnet sich das Popup, wenn der Benutzer mit der Maus über eines der Kartenelement fährt (hover). Es schließt sich wieder, wenn der Benutzer mit dem Mauszeiger das Kartenelement verlässt.
 
+```javascript
+var popup = L.popup({ closeButton: false });
+
+var districts = L.geoJson(geojson, {
+  // style: function (feature) { return { ... } },
+  onEachFeature: bindEvents
+}).addTo(map);
+
+function bindEvents(feature, layer) {
+  layer.bindPopup(feature.properties['@id']);
+  layer.on('mouseover', highlightFeature);
+  layer.on('mouseout', resetHighlight);
+}
 ```
 
-Ein ausführliche Beschreibung der Funktionen findet sich in der [Leaflet-Dokumentation](http://leafletjs.com/reference-1.2.0.html#popup).
+Die Funktionen `highlightFeature` und `resetHighlight` bestimmen, was passiert, wenn der Benutzer mit der Karte interagiert:
+
+```javascript
+function highlightFeature(e) {
+  var layer = e.target;
+
+  // Position und Inhalt des Popups festlegen
+  popup
+    .setLatLng(getLatLong(layer))
+    .setContent(getPopup(layer, data))
+    .openOn(map);
+
+  // Kartenelement grafisch hervorheben
+  layer.setStyle({
+    fillOpacity: 1,
+    weight: 3
+  });
+}
+
+function resetHighlight(e) {
+  map.closePopup();
+  districts.resetStyle(e.target);
+}
+```
+
+Der Inhalt des Popups ist HTML, welches wir aus den verschiedenen Daten des Kartenelements zusammenbauen:
+
+```javascript
+function getPopup(layer, data) {
+  var props = layer.feature.properties;
+  var datum = getData(data, props.name);
+  var html = '';
+  html += '<h3>' + props.name.split('-').join(', ') + '</h3>';
+  html += '<p>Ausländeranteil: ' + datum['Ausländeranteil'] + ' %</p>';
+  html += '<p>Einwohnerdichte: ' + datum['Einwohnerdichte'] + ' Einwohner/km²</p>';
+  html += '<p>Fläche: ' + datum['Fläche'] + ' km²</p>';
+  return html;
+}
+```
+
+Um das Popup an der richtigen Stelle zu öffnen, brauchen wir eine Hilfsfunktion `getLatLong`. Diese verwendet den geografischen Rahmen (*bounding box*), um den Punkt oberhalb der Mitte des Kartenelement zu berechnen. Das Ergebnis ist ein Koordinatenpaar, zum Beispiel `[48.2481162, 11.52133505]`:
+
+```javascript
+function getLatLong(feature) {
+  return [
+    feature.getBounds().getNorth(),
+    feature.getBounds().getWest() +
+      (feature.getBounds().getEast() -
+      feature.getBounds().getWest()) / 2
+  ];
+}
+```
+
+Ein ausführliche Beschreibung der Popup-Funktion findet sich in der [Leaflet-Dokumentation](http://leafletjs.com/reference-1.2.0.html#popup).
 
 ## Kartenebenen umschalten
 
@@ -303,8 +369,49 @@ Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafl
 
 ## Zoom-Stufen
 
-```javascript
+Manchmal kann notwenig sein, den Zoom in einer Karte zu beschränken oder auf bestimmte Anwendungsfälle hin anzupassen. Dafür bietet Leaflet mehrere Optionen beim Initialisieren der Karte.
 
+Zoom auf minimal 5 und maximal 14 beschränken:
+
+```javascript
+var map = L.map('map', {
+  minZoom: 5,
+  maxZoom: 13
+});
+```
+
+Außerdem kann man freies Zoomen erlauben, ohne dass die Karte einrastet. Das ist vor allem für mobile Anwendungen praktisch (*pinch to zoom*);
+
+```javascript
+var map = L.map('map', {
+  zoomDelta: 0.1,
+  zoomSnap: 0
+});
+```
+
+Auch nach dem man eine Karte erstellt hat, kann die Position und die Zoomstufe verändert werden:
+
+```javascript
+map.setView([35.652832, 139.839478], 10);
+```
+
+Besonders praktisch ist diese Funktion, um beispielsweise bei einem Klick auf eine Kartenelement auf diese Kartenelement zu zoomen:
+
+```javascript
+var map = L.map('map').setView([48.13, 11.57], 11);
+
+var districts = L.geoJson(geojson, {
+  // style: function (feature) { return { ... } },
+  onEachFeature: function (feature, layer) {
+    layer.on('click', zoomToFeature);
+  }
+}).addTo(map);
+
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds(), {
+    maxZoom: 13
+  });
+}
 ```
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/zoom-levels/).
@@ -316,15 +423,17 @@ Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafl
 ```
 
 ## Praktische Tools
-https://leaflet-extras.github.io/leaflet-providers/preview/index.html
-http://opendatalab.de/projects/geojson-utilities/
-http://mapshaper.org/
-http://geojson.io/
-https://overpass-turbo.eu/
-http://colorbrewer2.org/
+
+- https://leaflet-extras.github.io/leaflet-providers/preview/index.html
+- http://opendatalab.de/projects/geojson-utilities/
+- http://mapshaper.org/
+- http://geojson.io/
+- https://overpass-turbo.eu/
+- http://colorbrewer2.org/
 
 ## Einbetten
-Das Einbetten von Leaflet-Karten funktioniert am besten mit einem HTML-iFrame:
+
+Das Einbetten von Leaflet-Karten funktioniert am besten mit einem iFrame:
 
 ```html
 <iframe style="width: 100%; height: 360px; border: 0;" width="100%" height="100%" frameborder="0" src="http://leafletjs.com/examples/mobile/example.html"></iframe>
