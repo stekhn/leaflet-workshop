@@ -442,16 +442,15 @@ Das Einbinden der Locate-Funktion in den eigenen Code ist einfach:
 L.control.locate().addTo(map);
 ```
 
-Eine Liste der verfügbaren Plugins findet sich auf der [Leaflet-Seite](https://leafletjs.com/plugins.html)
+Eine Liste der verfügbaren Plugins findet sich auf der [Leaflet-Seite](https://leafletjs.com/plugins.html).
 
 ## Praktische Tools
 
-- https://leaflet-extras.github.io/leaflet-providers/preview/index.html
-- http://opendatalab.de/projects/geojson-utilities/
-- http://mapshaper.org/
-- http://geojson.io/
-- https://overpass-turbo.eu/
-- http://colorbrewer2.org/
+- [Leaflet Providers](https://leaflet-extras.github.io/leaflet-providers/preview/index.html): Übersicht der verfügbaren Grundlagenkarten
+- [Mapshaper](http://mapshaper.org/): Geodaten vereinfachen
+- [GeoJSON.io](http://geojson.io/): Geodaten online anschauen und bearbeiten
+- [Overpass Turbo](https://overpass-turbo.eu/): Daten aus der Open Street Map herunterladen
+- [Color Brewer](http://colorbrewer2.org/): Farbskalen für Karten und Diagramme
 
 ## Einbetten
 
