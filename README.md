@@ -23,7 +23,7 @@ Um die Beispiele verwenden und verändern zu können, empfiehlt es sich [Node.js
 Optional:
 4. Einen sogenannten *Linter* installieren, der JavaScript-Fehler schon im Code-Editor anzeigt. Für diesen Workshop verwenden wir ESLint. Für Sublime Text muss man nur noch die Erweiterungen [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter) und [SublimeLinter-contrib-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint) installieren. Am einfachsten geht das mit dem Sublime-Paketmanager [Packagecontrol](https://packagecontrol.io/installation).
 
-## Leaflet einbinden
+## Leaflet einbinden ([Demo](https://stekhn.github.io/leaflet-workshop/examples/1-base-map.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/1-base-map.html))
 
 Man kann Leaflet entweder von einer externen Seite oder lokal einbinden.
 
@@ -86,7 +86,7 @@ Typische Datenquellen sind:
 - [Natural Earth](http://www.naturalearthdata.com/downloads/), Welt- und Kontinentkarten
 - [Geofabrik](https://www.geofabrik.de/data/), kommerzieller Anbieter
 
-## GeoJSON laden
+## GeoJSON laden ([Demo](https://stekhn.github.io/leaflet-workshop/examples/3-choropleth.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/3-choropleth.html))
 
 GeoJSON ist ein offenes Format um geografische Daten zu repräsentieren. Ein Beispiel mit Feature, in diesem Fall ein Punk (*Point*), der die Eigenschaften (*Properties*) `name` und `value` hat.
 
@@ -142,7 +142,7 @@ function drawMap(geojson) {
 
 Weitere Beispiel wie man in Leaflet mit Geo-JSON arbeiten kann, finden sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/geojson/).
 
-## Marker erstellen
+## Marker erstellen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/2-markers.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/2-markers.html))
 
 In Leaflet kann man relativ einfach Marker anlegen, die bestimmte Orte markieren. Das können zum Beispiel Kindergärten, Notrufsäulen aber auch Drogenfunde oder Radundfälle sein. Um diese Orte sinnvoll zu markieren, gibt es die Möglichkeit eigene Icon-Grafiken zu definieren:  
 
@@ -177,7 +177,7 @@ L.geoJson(geojson, {
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/custom-icons/).
 
-## Thematische Karten erstellen
+## Thematische Karten erstellen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/3-choropleth.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/3-choropleth.html))
 
 Bei thematischen Karten oder sogenannten Choroplethen-Karten geht es darum Flächen, zum Beispiel Bundesländer, entsprechend eines bestimmten Merkmals einzufärben. Im folgenden Beispiel erstellen wir die Flächen aus einer GeoJSON-Datei. Die Farbe der jeweiligen Fläche wird aus dem Wert `feature.properties.value` mithilfe der Funktion `getColor()` definiert:
 
@@ -213,7 +213,7 @@ Ein praktisches Online-Werkzeug zum erstellen von gängigen Farbpaletten ist [Co
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/choropleth/).
 
-## Legende
+## Legende ([Demo](https://stekhn.github.io/leaflet-workshop/examples/3-choropleth.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/3-choropleth.html))
 
 ```javascript
 var legend = L.control({position: 'bottomright'});
@@ -250,7 +250,7 @@ function getLegend () {
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/choropleth/).
 
-## Popups
+## Popups ([Demo](https://stekhn.github.io/leaflet-workshop/examples/4-popups.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/4-popups.html))
 
 Um zusätzliche Daten anzuzeigen, kann man für die einzelnen Elemente der Karte ein *Popup* anzeigen. Dazu müssen wir festlegen, welche Art der Interaktion das Popup öffnet ([Klick, Doppelklick, Hover](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)). In diesem Beispiel öffnet sich das Popup, wenn der Benutzer mit der Maus über eines der Kartenelement fährt (hover). Es schließt sich wieder, wenn der Benutzer mit dem Mauszeiger das Kartenelement verlässt.
 
@@ -324,7 +324,7 @@ function getLatLong(feature) {
 
 Ein ausführliche Beschreibung der Popup-Funktion findet sich in der [Leaflet-Dokumentation](http://leafletjs.com/reference-1.2.0.html#popup).
 
-## Kartenebenen umschalten
+## Kartenebenen umschalten ([Demo](https://stekhn.github.io/leaflet-workshop/examples/5-switch-layers.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/5-switch-layers.html))
 
 In diesem Beispiel kann man zwischen zwei Basiskarten umschalten und zwei *Feature Layer* an- oder abwählen.
 
@@ -367,7 +367,7 @@ L.control.layers(
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/layers-control/).
 
-## Zoom-Stufen
+## Zoom-Stufen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/4-popups.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/4-popups.html))
 
 Manchmal kann notwenig sein, den Zoom in einer Karte zu beschränken oder auf bestimmte Anwendungsfälle hin anzupassen. Dafür bietet Leaflet mehrere Optionen beim Initialisieren der Karte.
 
@@ -416,7 +416,7 @@ function zoomToFeature(e) {
 
 Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/zoom-levels/).
 
-## Plugins
+## Plugins ([Demo](https://stekhn.github.io/leaflet-workshop/examples/6-plugins), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/6-plugins.html))
 
 Der Funktionsumfang von Leaflet kann durch viele verschiedene Plugin erweitert werden. Dieses Beispiel verwendet das Plugin [Locate](https://github.com/domoritz/leaflet-locatecontrol). Damit kann der Benutzer seinen [Standort lokalisieren](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API), was praktisch für personalisierte Kartenanwendungen ist.
 
