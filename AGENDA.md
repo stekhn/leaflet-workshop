@@ -29,7 +29,7 @@ Thematische Karten (Choroplethenkarten) erstellen
 - Datenklassifikation verstehen ([Datawrapper Blog](https://academy.datawrapper.de/article/117-color-palette-for-your-map))
 - Legenden erstellen
 - Alternative Darstellungsformen
-**Übung**: Thematische Karte erstellen
+- **Übung**: Thematische Karte erstellen
 
 ## Freitag (halber Tag)
 Interaktive Karten
@@ -39,4 +39,4 @@ Interaktive Karten
 - Leaflet-Plugins verwenden
 - Interaktiven Karten einbinden
 - (Kartenprojektionen)
-**Übung**: Karte mit Popups und Umschalter erstellen
+- **Übung**: Karte mit Popups und Umschalter erstellen
