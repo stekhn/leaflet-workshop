@@ -73,6 +73,41 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map
 
 Wenn man großen Traffic auf seiner Webseite erwartet und das Projekt eine kommerziellen Zweck verfolgt, sollte man überlegen zu einem Bezahlanbieter wie [Mapbox](https://www.mapbox.com/), [MapQuest](https://developer.mapquest.com/plans) oder [HERE](https://developer.here.com/plans) zu wechseln. Außerdem bieten diese Anbieter den Vorteil eigene Kartendesign erstellen zu können.
 
+## Marker erstellen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/2-markers.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/2-markers.html))
+
+In Leaflet kann man relativ einfach Marker anlegen, die bestimmte Orte markieren. Das können zum Beispiel Kindergärten, Notrufsäulen aber auch Drogenfunde oder Radundfälle sein. Um diese Orte sinnvoll zu markieren, gibt es die Möglichkeit eigene Icon-Grafiken zu definieren:  
+
+```javascript
+var icon = new L.Icon({
+  iconSize: [24, 24],     // Größe des Icons
+  iconAnchor: [12, 12],   // Positionierung des Icons
+  shadowSize: [30,15],    // Größe des Schatten (optional)
+  popupAnchor:  [0, -18], // Position des Popups
+  iconUrl: './defibrillator.png'  // Pfad zur Icon-Grafik
+});
+```
+
+Ein einzelner Marker lässt sich über die Funktion `L.marker()` hinzufügen:
+
+```javascript
+L.marker([48.13, 11.57], {icon: icon}).addTo(map);
+```
+
+In den meisten Fällen ist es jedoch praktischer Marker aus einer GeoJSON-Dateien hinzufügen:
+
+```javascript
+L.geoJson(geojson, {
+  pointToLayer: function(feature, latlng) {
+    return L.marker(latlng, {
+      icon: icon
+    });
+  },
+}).addTo(map);
+
+```
+
+Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/custom-icons/).
+
 ## Geodaten finden
 
 Ein häufiges Problem ist das Beschaffen von aktuellen und hochwertigen Geodaten. Geodaten können beispielsweise Flächendaten sein (Bundesländer, Gemeinden, Wahlkreise, Überschwemmungsgebiete), Punkte (Kindergärten, Notrufsäulen, Drogenfunde) oder Linien (Flüsse, Autobahnen).
@@ -141,41 +176,6 @@ function drawMap(geojson) {
 ```
 
 Weitere Beispiel wie man in Leaflet mit Geo-JSON arbeiten kann, finden sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/geojson/).
-
-## Marker erstellen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/2-markers.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/2-markers.html))
-
-In Leaflet kann man relativ einfach Marker anlegen, die bestimmte Orte markieren. Das können zum Beispiel Kindergärten, Notrufsäulen aber auch Drogenfunde oder Radundfälle sein. Um diese Orte sinnvoll zu markieren, gibt es die Möglichkeit eigene Icon-Grafiken zu definieren:  
-
-```javascript
-var icon = new L.Icon({
-  iconSize: [24, 24],     // Größe des Icons
-  iconAnchor: [12, 12],   // Positionierung des Icons
-  shadowSize: [30,15],    // Größe des Schatten (optional)
-  popupAnchor:  [0, -18], // Position des Popups
-  iconUrl: './defibrillator.png'  // Pfad zur Icon-Grafik
-});
-```
-
-Ein einzelner Marker lässt sich über die Funktion `L.marker()` hinzufügen:
-
-```javascript
-L.marker([48.13, 11.57], {icon: icon}).addTo(map);
-```
-
-In den meisten Fällen ist es jedoch praktischer Marker aus einer GeoJSON-Dateien hinzufügen:
-
-```javascript
-L.geoJson(geojson, {
-  pointToLayer: function(feature, latlng) {
-    return L.marker(latlng, {
-      icon: icon
-    });
-  },
-}).addTo(map);
-
-```
-
-Ein ausführliches Beispiel findet sich in den [Leaflet-Beispielen](http://leafletjs.com/examples/custom-icons/).
 
 ## Thematische Karten erstellen ([Demo](https://stekhn.github.io/leaflet-workshop/examples/3-choropleth.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/3-choropleth.html))
 
