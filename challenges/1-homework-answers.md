@@ -51,15 +51,13 @@ getAge(person); // => Philipp ist 31 Jahre alt.
 **Lösung**
 
 ```javascript
-var names = ['Philipp', 'Andrea', 'Sophie'];
+var person = { name: 'Philipp', age: 31 };
 
-var sayHello = function (array) {
-  for (var i = 0; i < array.length; i++) {
-    console.log('Hallo ' + names[i]+ '.');
-  }
+var getAge = function (object) {
+  console.log(object.name + ' ist ' + object.age + ' Jahre alt.');
 };
 
-sayHello(names);
+getAge(person); // => Philipp ist 31 Jahre alt.
 ```
 
 Objekte können auch verschachtelt werden. Um auf ein bestimmtes Unterobjekt zuzugreifen, gibt es zwei Möglichkeiten: [Punkt oder Klammernotion](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Operators/Property_Accessors). In diesem Beispiel können wir beide anwenden. Wir wollen wissen, wo Philipp überall arbeitet:
