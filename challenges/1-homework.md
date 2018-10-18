@@ -75,7 +75,7 @@ sayHelloCity(persons); // => Hallo Philipp aus Stuttgart. Hallo Andrea aus Hambu
 
 ### 4. Filter
 
-Manchmal möchte man aus einem Object Array nur ein bestimmtes Objekt haben. Hier geht es darum, für eine bestimmte Person (nach Namen) das Alter zu herauszufinden. 
+Manchmal möchte man aus einem Object Array nur ein bestimmtes Objekt haben. Hier geht es darum, für eine bestimmte Person (nach Namen) die dazugehörige Stadt zu herauszufinden. 
 
 ```javascript
 var persons = [
