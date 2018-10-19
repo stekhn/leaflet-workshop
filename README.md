@@ -61,7 +61,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 Die genauen Benutzungsbedingungen für die OpenStreetMap-Karten kann man [hier](https://operations.osmfoundation.org/policies/tiles/) nachlesen. Die OpenStreetMap-Karte ist jedoch recht unübersichtlich, da sie versucht so viele Informationen wie möglich darzustellen. Das kann für viele Kartenvisulisierungen eher hinderlich sein. Daher kann es sinnvoll sein, eine andere, sehr reduzierte, Basiskarte einzubinden, welche nur die wichtigsten Informationen darstellt.  
 
-Eine Übersicht über die veschiedenen kostenlosen Basiskarten gibt es [hier](https://leaflet-extras.github.io/leaflet-providers/preview/index.html).
+Eine Übersicht über die verschiedenen kostenlosen Basiskarten gibt es [hier](https://leaflet-extras.github.io/leaflet-providers/preview/index.html).
 
 ```javascript
 var map = L.map('map').setView([48.13, 11.57], 11);
@@ -120,6 +120,58 @@ Typische Datenquellen sind:
 - [OpenDataLab](http://opendatalab.de/projects/geojson-utilities/) (Bundesländer, Landkreise und Gemeinden)
 - [Natural Earth](http://www.naturalearthdata.com/downloads/), Welt- und Kontinentkarten
 - [Geofabrik](https://www.geofabrik.de/data/), kommerzieller Anbieter
+
+Außerdem gibt es auf Wikipedia [diese Liste der GIS-Datenquellen](https://en.wikipedia.org/wiki/List_of_GIS_data_sources).
+
+## Overpass Turbo verwenden
+
+[OverPass Turbo](https://overpass-turbo.eu/) ist eine Webseite (und API), welche dabei hilft die Datenschätze der Open Street Map zu heben und nutzbar zu machen. Am einfachsten lassen sich Suchanfragen mit dem *Wizard* erstellen. So lassen sich einfache Anfragen in die deutlich kompliziertere Anfragesprache *Overpass-QL* übersetzt.
+
+**Beispiel:** Stadtbezirke für München anzeigen:
+
+```
+boundary=administrative and admin_level=9 in München
+```
+
+Mit einem Klick auf *Abfrage erstellen und ausführen* wird die Suchanfrage erstellt und die Daten (sofern vorhanden) auf der Karte angezeigt:
+
+```
+[out:json][timeout:25];
+
+{{geocodeArea:München}}->.searchArea;
+
+(
+  node["boundary"="administrative"]["admin_level"="9"](area.searchArea);
+  way["boundary"="administrative"]["admin_level"="9"](area.searchArea);
+  relation["boundary"="administrative"]["admin_level"="9"](area.searchArea);
+);
+
+out body;
+>;
+out skel qt;
+```
+
+Die automatisch generierte Suchanfrage im *Overpass-QL-Format* kann später verändert werden. Wenn die Suchanfrage etwa wegen eins *Timeouts* scheitert, kann man die Zeit, die eine Suchanfrage maximal dauern darf, hochsetzen. Außerdem wollen wir in unserem Beispiel nur die Flächen der Verwaltungsgebiete bekommen. Daher können wir die Teile der Anfragen entfernen, welche Geometrie vom Typ `point` und `way` zurückgeben: 
+
+```
+// Time-out hochsetzen
+[out:json][timeout:300];
+
+{{geocodeArea:München}}->.searchArea;
+
+( 
+  // Nur Elemente vom Typ "Relation" abfragen.
+  relation["boundary"="administrative"]["admin_level"="9"](area.searchArea);
+);
+
+out body;
+>;
+out skel qt;
+```
+
+Wenn die Abfragen erfolgreich war, kann man die Dateien mit einem Klick auf *Exportieren* als GeoJSON oder KML herunterladen. Außerdem kann man Suchanfragen speichern oder per Link teilen.
+
+Ein Überblick der verschiedenen Daten in Open Street Map gibt es [hier im OSM-Wiki](https://wiki.openstreetmap.org/wiki/DE:Map_Features). Weitere Beispiel für nützliche Anfrage-Techniken an die Overpass-Turbo-API finden sich [hier im OSM-Wiki](https://wiki.openstreetmap.org/wiki/DE:Overpass_API/Beispielsammlung).
 
 ## GeoJSON laden ([Demo](https://stekhn.github.io/leaflet-workshop/examples/3-choropleth.html), [Code](https://github.com/stekhn/leaflet-workshop/blob/master/examples/3-choropleth.html))
 
@@ -451,6 +503,7 @@ Eine Liste der verfügbaren Plugins findet sich auf der [Leaflet-Seite](https://
 - [GeoJSON.io](http://geojson.io/): Geodaten online anschauen und bearbeiten
 - [Overpass Turbo](https://overpass-turbo.eu/): Daten aus der Open Street Map herunterladen
 - [Color Brewer](http://colorbrewer2.org/): Farbskalen für Karten und Diagramme
+- [CSV2JSON](https://www.csvjson.com/csv2json): Tabellen in JSON umwandeln
 
 ## Einbetten
 
