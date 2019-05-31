@@ -12,12 +12,12 @@
     "start": "node node_modules/http-server/bin/http-server -s -o --cors"
   },
   "dependencies": {
-    "http-server": "^0.10.0",
-    "leaflet": "^1.2.0",
+    "http-server": "^0.11.1",
+    "leaflet": "^1.5.1",
     "leaflet-choropleth": "^1.1.4",
-    "leaflet.locatecontrol": "^0.62.0"
+    "leaflet.locatecontrol": "^0.67.0"
   },
   "devDependencies": {
-    "eslint": "^4.8.0"
+    "eslint": "^5.16.0"
   }
 }
