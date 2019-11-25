@@ -516,3 +516,19 @@ Das Einbetten von Leaflet-Karten funktioniert am besten mit einem iFrame:
 Das funktioniert aber nur dann, wenn sich bei Größenänderung die Höhe nicht verändert. Andernfalls kann es sein, dass Teile der Grafik abgeschnitten werden oder weiße Lücken entstehen.
 
 Für das Einbetten von Grafiken mit variabler Höhe empfiehlt sich die JavaScript-Bibliothek [pym.js](http://blog.apps.npr.org/pym.js/). 
+
+## Über den Autor
+
+Steffen Kühne arbeitet als Datenjournalist beim Bayerischen Rundfunk und beschäftigt sich vor allem mit Datenanalysen und Visualisierung. Nach einem Studium der Journalistik studierte er Medieninformatik, um dann ein Volontariat als Datenjournalist und digitaler Designer bei der Süddeutschen Zeitung zu beginnen. Bis 2015 arbeitete er dort in der Entwicklungsredaktion. Außerdem ist Steffen Kühne als Trainer für verschiedene Medien und Journalistenschulen tätig.
+
+- Webseite: [stekhn.de](https://stekhn.de)
+- Github: [stekhn](https://github.com/stekhn)
+- Twitter: [stekhn](https://twitter.com/stekhn)
+- LinkedIn: [stekhn](https://www.linkedin.com/in/stekhn/)
+- Xing: [Steffen Kühne](https://www.xing.com/profile/Steffen_Kuehne11/cv)
+
+## Weitere Workshops
+
+- [Grundlagen der Programmierung mit HTML, CSS und JavaScript](https://github.com/stekhn/programming-workshop/)
+- [Datenvisualisierung mit D3.js lernen](https://github.com/stekhn/d3-workshop)
+- [Kartenvisualisierung mit Leaflet lernen](https://github.com/stekhn/leaflet-workshop)
